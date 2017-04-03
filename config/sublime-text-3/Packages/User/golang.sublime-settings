@@ -1,0 +1,6 @@
+{
+    "osx":  {
+        "PATH": "/Users/jake/Code/go/bin",
+        "GOPATH": "/Users/jake/Code/go"        
+    }
+}

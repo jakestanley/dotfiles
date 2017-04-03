@@ -1,0 +1,14 @@
+<snippet>
+    <content>
+        <![CDATA[
+switch(${1:variable}) {
+    ${2:}
+    default:
+        ${3:// code}
+        ${4:break;}
+}${5:}
+        ]]>
+    </content>
+    <tabTrigger>switch</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content>
+        <![CDATA[
+${1:Object} ${2:object} = new ${1:Object}(${3:args});
+        ]]>
+    </content>
+    <tabTrigger>new</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content>
+        <![CDATA[
+System.out.println(${1:"${2:message}"});${3:}
+        ]]>
+    </content>
+    <tabTrigger>sout</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+        <![CDATA[
+for (${1:Object} ${2:object} : ${3:collection}){
+    ${4:}
+}${5:}
+        ]]>
+    </content>
+    <tabTrigger>fore</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

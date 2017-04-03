@@ -1,0 +1,9 @@
+<snippet>
+    <content>
+        <![CDATA[
+throw new ${1:Exception}(${2:"${3:message}"});
+        ]]>
+    </content>
+    <tabTrigger>throw</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

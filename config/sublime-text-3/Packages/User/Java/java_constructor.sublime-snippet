@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+        <![CDATA[
+public ${1:ClassName}(${2:String args}){
+    ${3:// TODO auto-generated constructor}
+}${4:}
+        ]]>
+    </content>
+    <tabTrigger>struct</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

@@ -1,0 +1,13 @@
+<!-- Pinched from IntelliJ -->
+<snippet>
+    <content>
+        <![CDATA[
+for (Iterator<${1:Object}> ${2:iterator} = ${3:collection}.iterator(); ${2:iterator}.hasNext(); ) {
+    ${1:Object} ${4:next} = ${2:iterator}.next();
+    ${5:}
+}${6:}
+        ]]>
+    </content>
+    <tabTrigger>itco</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

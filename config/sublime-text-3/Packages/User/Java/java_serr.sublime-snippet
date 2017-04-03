@@ -1,0 +1,9 @@
+<snippet>
+    <content>
+        <![CDATA[
+System.err.println(${1:"${2:message}"});${3:}
+        ]]>
+    </content>
+    <tabTrigger>serr</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

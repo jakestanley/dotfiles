@@ -1,0 +1,9 @@
+<snippet>
+    <content>
+        <![CDATA[
+System.exit(${1:0});${2:}
+        ]]>
+    </content>
+    <tabTrigger>sexit</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

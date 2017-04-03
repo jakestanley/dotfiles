@@ -1,0 +1,18 @@
+{
+    "scope": "source.java",
+    "completions": [
+
+        // lombok
+        "@To|String",
+        "@Getter",
+        "@Setter",
+        "@NoArgsConstructor",
+        "@AllArgsConstructor",
+
+        // spring
+        "@RequestMapping(value=\"/${1:mapping}\", method=RequestMethod.${2:GET})$0",
+        "@Column(name=\"${1:NAME}\", length=${2:32}, nullable=${3:false})$0",
+        "@Column(name=\"${1:NAME}\", length=${2:32})$0",
+        "@Autowired",
+    ]
+}

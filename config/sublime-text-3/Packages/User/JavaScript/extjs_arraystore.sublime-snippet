@@ -1,0 +1,12 @@
+<snippet>
+	<content>
+		<![CDATA[
+store: Ext.create('Ext.data.ArrayStore', {
+	fields: [${1:}],
+	data: [${2:}]
+})${3:}
+		]]>
+	</content>
+	<tabTrigger>arraystore</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

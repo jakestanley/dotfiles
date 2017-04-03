@@ -1,0 +1,55 @@
+[core]
+    editor = vim
+    whitespace = trailing-space,space-before-tab,indent-with-non-tab
+	eol = input
+	excludesfile = /Users/jake/.gitignore_global
+
+[user]
+    name = Jake Stanley
+    email = mail@jakestanley.co.uk
+[push]
+    default = simple
+
+[gui]
+
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+
+[merge]
+    tool = meld
+    verbosity = 5
+[mergetool]
+    keepBackup = false
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+
+[alias]
+
+l = "!x() { git log --pretty=tformat:\"%Cred%d %Cgreen%s %Cblue(%cn) %Cred%h\" --graph --branches --decorate -n$1;}; x"
+
+co = checkout
+empty = checkout -- .
+nb = checkout -b
+
+db = branch -D
+
+s = status
+su = status -uno
+
+dt = difftool
+
+mt = mergetool
+poop = stash pop
+
+pullr = pull --rebase
+diffn = diff --ignore-space-at-eol

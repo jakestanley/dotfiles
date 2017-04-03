@@ -1,0 +1,13 @@
+<snippet>
+    <content>
+        <![CDATA[
+try {
+    ${1:// code}
+} catch (${2:Exception} ${3:e}) {
+    ${4:// handler}
+}${5:}
+        ]]>
+    </content>
+    <tabTrigger>trycatch</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

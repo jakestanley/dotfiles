@@ -1,0 +1,9 @@
+<snippet>
+    <content>
+        <![CDATA[
+List<${1:Object}> ${2:objectList} = new ArrayList<${1:Object}>();${3:}
+        ]]>
+    </content>
+    <tabTrigger>list</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

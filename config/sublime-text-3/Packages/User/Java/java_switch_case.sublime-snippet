@@ -1,0 +1,10 @@
+<snippet>
+    <content>
+        <![CDATA[
+case ${1:value}:
+    ${2:// code}
+    ${3:break;}]]>
+    </content>
+    <tabTrigger>case</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

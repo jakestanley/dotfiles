@@ -1,0 +1,52 @@
+[{
+    "keys": ["ctrl+tab"],
+    "command": "next_view"
+}, {
+    "keys": ["ctrl+shift+tab"],
+    "command": "prev_view"
+}, {
+    "keys": ["ctrl+shift+p"],
+    "command": "show_overlay",
+    "args": {
+        "overlay": "command_palette"
+    }
+}, {
+    "keys": ["ctrl+shift+alt+s"],
+    "command": "save_all"
+}, {
+    "keys": ["ctrl+,"],
+    "command": "append_comma"
+}, {
+    "keys": ["ctrl+shift+,"],
+    "command": "append_comma",
+    "args": {
+        "enter_new_line": "true"
+    }
+}, {
+    "keys": ["ctrl+alt+p"],
+    "command": "prompt_select_workspace"
+}, {
+    "keys": ["shift+delete"],
+    "command": "run_macro_file",
+    "args": {
+        "file": "res://Packages/Default/Delete Line.sublime-macro"
+    }
+}, {
+    "keys": ["ctrl+shift+o"],
+    "command": "prompt_open_project"
+}, {
+    "keys": ["alt+m"],
+    "command": "toggle_menu"
+}, {
+    "keys": ["ctrl+k", "ctrl+t"], 
+    "command": "toggle_tabs" 
+}, {
+    "keys": ["ctrl+k", "ctrl+s"], 
+    "command": "toggle_status_bar" 
+}, { 
+    "keys": ["alt+w"], 
+    "command": "toggle_setting", 
+    "args": {
+        "setting": "word_wrap"
+    }
+}]

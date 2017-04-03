@@ -1,0 +1,10 @@
+<snippet>
+    <content>
+        <![CDATA[
+defaults: {
+    ${1:}
+}${3:,}]]>
+    </content>
+    <tabTrigger>defaults</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

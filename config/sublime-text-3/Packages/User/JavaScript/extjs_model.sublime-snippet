@@ -1,0 +1,16 @@
+<snippet>
+	<content>
+		<![CDATA[
+Ext.define('${1:modelpath}', {
+	extend: 'Ext.data.Model',
+	fields: [
+		{name: '${2:name1}',type: '${3:type1}'}
+	]
+});
+		]]>
+	</content>
+	<tabTrigger>model</tabTrigger>
+	<scope>source.js</scope>
+</snippet>
+
+

@@ -1,0 +1,21 @@
+{
+    "scope": "source.js",
+    "completions": [
+
+        // extjs
+        "xtype: 'combobox'",
+        "xtype: 'textfield'",
+        "xtype: 'textareafield'",
+        "xtype: 'fieldset'",
+        "xtype: 'fieldcontainer'",
+        "xtype: 'button'",
+        "xtype: 'checkbox'",
+        "xtype: 'gridcolumn'",
+        "layout: 'hbox'",
+        "layout: 'vbox'",
+        "allowBlank: false",
+        "enforceMaxLength: true",
+        "editable: false"
+        
+    ]
+}

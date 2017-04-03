@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+        <![CDATA[
+Ext.define('${1:slug}', {
+    ${2:}
+});${3:}
+        ]]>
+    </content>
+    <tabTrigger>extdefine</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

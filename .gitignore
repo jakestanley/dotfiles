@@ -1,0 +1,5 @@
+*.cache
+*.user-ca-bundle
+*.sublime-workspace
+*.tmTheme
+*.merged-ca-bundle

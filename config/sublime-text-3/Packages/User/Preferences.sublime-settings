@@ -1,0 +1,54 @@
+{
+	"caret_extra_width": 8,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Solarized Dark.tmTheme",
+	"draw_white_space": "selection",
+	"enable_tab_scrolling": false,
+	"file_exclude_patterns":
+	[
+		"ext-*.js",
+		".DS_Store",
+		"*.bak",
+		"*.sublime-workspace",
+		"*.class",
+		"*.o",
+		"npm-debug.log",
+		"*.pyc",
+		"*.min.js",
+		".classpath",
+		"*.exe"
+	],
+	"folder_exclude_patterns":
+	[
+		"*.cache",
+		"build",
+		"node_modules",
+		"docs",
+		"bower_components",
+		".git",
+		"Package Control.cache",
+		"example",
+		"target",
+		".git",
+		"ace"
+	],
+	"font_face": "Ubuntu Mono",
+	"font_options":
+	[
+		"no_antialias"
+	],
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80,
+		100
+	],
+	"show_full_path": false,
+	"tab_size": 4,
+	"theme": "Boxy Solarized Dark.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

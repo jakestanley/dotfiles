@@ -1,0 +1,9 @@
+<snippet>
+    <content>
+        <![CDATA[
+public static final ${1:Object} ${2:NAME} = ${3:value};${4:}
+        ]]>
+    </content>
+    <tabTrigger>const</tabTrigger>
+    <scope>source.java</scope>
+</snippet>

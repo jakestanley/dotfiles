@@ -1,0 +1,9 @@
+<snippet>
+    <content>
+        <![CDATA[
+console.debug(${1:object});${2:}
+        ]]>
+    </content>
+    <tabTrigger>debug</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
