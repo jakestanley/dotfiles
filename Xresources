@@ -9,7 +9,7 @@ rofi.borderwidth: 2
 rofi.bordercolor: C_color9
 rofi.font: Ubuntu 10
 urxvt.background: [95]C_color8
-urxvt.font: xft:Schumacher Clean:antialias=false:size=9
+urxvt.font: xft:Schumacher Clean:antialias=false:size=10
 urxvt.letterSpace: 0
 urxvt.scrollBar: false
 urxvt.depth: 32

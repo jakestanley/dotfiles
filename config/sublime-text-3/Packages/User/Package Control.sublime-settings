@@ -5,9 +5,9 @@
 	],
 	"installed_packages":
 	[
-		"3D Tool (Async Burst-Mode)",
 		"A File Icon",
 		"Boxy Theme",
-		"Package Control"
+		"Package Control",
+		"SqlBeautifier"
 	]
 }

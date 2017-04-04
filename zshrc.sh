@@ -62,8 +62,8 @@ plugins=(git osx battery brew brew-cask vagrant svn sublime screen rsync mvn doc
 # User configuration
 export VISUAL="vim"
 export SVN_EDITOR="vim"
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:$HOME/bin/Sencha/Cmd/4.0.5.87:$HOME/bin:/opt/jdk/jre/bin"
-export DOTFILES_REPO_DIR="${HOME}/dots"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:$HOME/bin/Sencha/Cmd/4.0.5.87:$HOME/bin:/opt/jdk/jre/bin:/usr/bin/core_perl"
+export DOTFILES_REPO_DIR="${HOME}/dotfiles"
 export ECLIPSE_HOME="${HOME}/eclipse"
 export GOPATH="${HOME}/Code/Go"
 if [ -d "/Users/jake" ]; then
