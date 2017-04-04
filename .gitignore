@@ -1,5 +1,8 @@
+*.log
+*.swp
+*.png
 *.cache
-*.user-ca-bundle
 *.sublime-workspace
 *.tmTheme
-*.merged-ca-bundle
+*-ca-bundle
+*.last-run
