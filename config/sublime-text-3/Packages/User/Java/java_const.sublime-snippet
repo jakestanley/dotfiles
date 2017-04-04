@@ -4,6 +4,6 @@
 public static final ${1:Object} ${2:NAME} = ${3:value};${4:}
         ]]>
     </content>
-    <tabTrigger>const</tabTrigger>
+    <tabTrigger>psf</tabTrigger>
     <scope>source.java</scope>
 </snippet>
