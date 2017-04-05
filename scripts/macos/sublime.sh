@@ -8,9 +8,7 @@ echo $OS
 if [ "$OS" == 'Darwin' ]; then
     SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 3"
 else
-    # SUBLIME_DIR="$HOME/.config/sublime-text-3"
-    echo "Not Darwin"
-    exit -1
+    SUBLIME_DIR="$HOME/.config/sublime-text-3"
 fi
 
 echo "sublime dir..."
