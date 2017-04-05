@@ -6,3 +6,6 @@
 *.tmTheme
 *-ca-bundle
 *.last-run
+
+SublimeLinter.sublime-settings
+
