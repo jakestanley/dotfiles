@@ -40,7 +40,7 @@
   </placement>
   <theme>
     <name>Clearlooks</name>
-    <titleLayout>NLIMC</titleLayout>
+    <titleLayout>NDLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -175,10 +175,16 @@
     <keybind key="C-A-Left">
       <action name="GoToDesktop"/>
     </keybind>
+    <keybind key="W-grave">
+      <action name="DesktopNext"/>
+    </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
         <command>xbacklight -dec 10</command>
       </action>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="MaximizeFull"/>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
