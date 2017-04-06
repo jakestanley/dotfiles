@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-setxkbmap gb &
+~/.xinitrc.d/setxkbmap.sh &
 xrdb -merge ~/.Xresources &
 
 # set up monitors configuration

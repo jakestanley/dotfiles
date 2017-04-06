@@ -1,0 +1,2 @@
+#setxkbmap au
+setxkbmap gb
