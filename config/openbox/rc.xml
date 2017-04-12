@@ -284,6 +284,11 @@
     <keybind key="A-S-Tab">
       <action name="PreviousWindow"/>
     </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>xscreensaver-command -lock</command>
+      </action>
+    </keybind>
     <keybind key="C-A-Tab">
       <action name="NextWindow">
         <panels>yes</panels>
