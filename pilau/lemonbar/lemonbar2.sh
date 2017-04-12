@@ -14,12 +14,14 @@ while true; do
          string:'org.mpris.MediaPlayer2.Player' string:'Metadata'|\
          egrep -A 1 "title"|egrep -v "title"|cut -b 44-|cut -d '"' -f 1|\
          egrep -v ^$`)
-	datetime=$(date +"%H:%M %A %d")
+	timestr=$(date +"%H:%M")
+	datestr=$(date +"%A %d ")
 
     # build the bar
     bar=$(echo %{S1})
-    bar=$bar$(echo %{l})$nowplaying
-    bar=$bar$(echo "%{c}")$datetime
+    bar=$bar$(echo "%{l} ")$nowplaying
+    bar=$bar$(echo "%{c}")$timestr
+    bar=$bar$(echo "%{r}")${datestr}" "
     echo $bar
 	sleep 1s
 done | lemonbar -g 1920x16+1680+0 -B \#334455
