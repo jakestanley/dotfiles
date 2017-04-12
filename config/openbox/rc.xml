@@ -193,7 +193,7 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>shutter -s</command>
+        <command>escrotum -s -C</command>
       </action>
     </keybind>
     <keybind key="C-A-Right">
