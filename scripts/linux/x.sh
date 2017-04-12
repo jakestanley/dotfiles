@@ -14,3 +14,6 @@ rm -rf ~/.Xresources.d
 ln -s $DOTFILES_REPO_DIR/Xresources ~/.Xresources
 ln -s $DOTFILES_REPO_DIR/Xresources.d ~/.Xresources.d
 
+# link xscreensaver stuff
+rm ~/.xscreensaver
+ln -s $DOTFILES_REPO_DIR/xscreensaver ~/.xscreensaver
