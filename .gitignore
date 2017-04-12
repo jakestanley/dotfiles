@@ -5,6 +5,7 @@
 *.sublime-workspace
 *.tmTheme
 *-ca-bundle
+*.crt
 *.last-run
 
 SublimeLinter.sublime-settings
