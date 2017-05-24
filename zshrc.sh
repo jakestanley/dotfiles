@@ -62,14 +62,14 @@ plugins=(git osx battery brew brew-cask vagrant svn sublime screen rsync mvn doc
 # User configuration
 export VISUAL="vim"
 export SVN_EDITOR="vim"
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:$HOME/bin/Sencha/Cmd/4.0.5.87:$HOME/bin:/opt/jdk/jre/bin:/usr/bin/core_perl:$HOME/.pilau/lemonbar"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:$HOME/bin/Sencha/Cmd/4.0.5.87:$HOME/bin:$HOME/opt/jdk/jre/bin:/usr/bin/core_perl:$HOME/.pilau/lemonbar":$HOME/opt/sqldeveloper
 export DOTFILES_REPO_DIR="${HOME}/dotfiles"
 export ECLIPSE_HOME="${HOME}/eclipse"
 export GOPATH="${HOME}/Code/Go"
 if [ -d "/Users/jake" ]; then
     export PATH="/Users/jake/Library/Android/sdk/platform-tools:$PATH"
 else
-    export JAVA_HOME="/opt/jdk"
+    export JAVA_HOME="${HOME}/opt/jdk"
     # insert linux specific PATH stuff here
 fi
 # export MANPATH="/usr/local/man:$MANPATH"
