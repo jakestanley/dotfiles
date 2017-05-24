@@ -57,7 +57,7 @@ HIST_REDUCE_BLANKS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx battery brew brew-cask vagrant svn sublime screen rsync mvn docker)
+plugins=(git osx battery brew brew-cask vagrant svn sublime screen rsync mvn docker ng aws)
 
 # User configuration
 export VISUAL="vim"
