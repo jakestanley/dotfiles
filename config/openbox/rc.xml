@@ -175,6 +175,11 @@
     <keybind key="C-A-Left">
       <action name="GoToDesktop"/>
     </keybind>
+    <keybind key="W-Return">
+      <action name="Execute">
+        <command>urxvt</command>
+      </action>
+    </keybind>
     <keybind key="W-KP_Multiply">
       <action name="Execute">
         <command>xdotool type &quot;SELECT * FROM &quot;</command>
