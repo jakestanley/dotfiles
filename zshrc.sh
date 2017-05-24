@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -57,7 +59,20 @@ HIST_REDUCE_BLANKS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx battery brew brew-cask vagrant svn sublime screen rsync mvn docker ng aws)
+
+plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws)
+
+OS=`uname -s`
+echo "Detected environment: $OS"
+
+if [ "$OS" = 'Darwin' ]; then
+    plugins="$plugins osx brew brew-cask"
+else
+    # assume arch linux. what's the worst that could happen?
+    plugins="$plugins archlinux"
+fi
+
+echo "Initialised plugins: $plugins"
 
 # User configuration
 export VISUAL="vim"
@@ -66,14 +81,16 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:$HOM
 export DOTFILES_REPO_DIR="${HOME}/dotfiles"
 export ECLIPSE_HOME="${HOME}/eclipse"
 export GOPATH="${HOME}/Code/Go"
-if [ -d "/Users/jake" ]; then
+
+if [ "$OS" = 'Darwin' ]; then
     export PATH="/Users/jake/Library/Android/sdk/platform-tools:$PATH"
 else
     export JAVA_HOME="${HOME}/opt/jdk"
     # insert linux specific PATH stuff here
 fi
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
+# run the oh-my-zsh shell startup script
 source $ZSH/oh-my-zsh.sh
 
 # alt+arrows navigation
@@ -81,7 +98,7 @@ bindkey '[C' forward-word
 bindkey '[D' backward-word
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_GB.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
