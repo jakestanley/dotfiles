@@ -7,5 +7,43 @@ I've been getting better at using Linux over the last two years and with that I 
 
 # Environment
 
-- zsh (with oh my zsh)
+## Packages
+
+### Arch Linux
+
+#### Required
+
+- zsh
+- xorg-xinit
+- xorg-server
+- git
+- ohmyzsh
+- obkey (AUR)
+- obconf
+- rxvt-unicode
+- openbox
+- lemonbar (AUR)
+- xdotool
+- sublime-text-dev (AUR)
+- pcmanfm
+- xscreensaver
+- ttf-ubuntu-font-family
+- feh
+- dunst
+- rofi
+
+#### Recommended
+
+- yaourt (AUR)
+- chromium
+- gtk-theme-arc-git (AUR)
+
+#### Optional
+
+- tmux
 - fzf
+- aws-cli
+- lxappearance
+- ultra-flat-icons-blue (AUR)
+- pandoc
+- spotify (AUR)
