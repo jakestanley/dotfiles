@@ -66,11 +66,14 @@ OS=`uname -s`
 echo "Detected environment: $OS"
 
 if [ "$OS" = 'Darwin' ]; then
-    plugins="$plugins osx brew brew-cask"
+    additional_plugins="osx brew brew-cask"
 else
     # assume arch linux. what's the worst that could happen?
-    plugins="$plugins archlinux"
+    additional_plugins="archlinux"
 fi
+
+plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws \
+         $additional_plugins)
 
 echo "Initialised plugins: $plugins"
 
