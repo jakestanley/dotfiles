@@ -63,6 +63,7 @@ HIST_REDUCE_BLANKS="true"
 plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws)
 
 OS=`uname -s`
+echo ""
 echo "Detected environment: $OS"
 
 if [ "$OS" = 'Darwin' ]; then
@@ -75,7 +76,8 @@ fi
 plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws \
          $additional_plugins)
 
-echo "Initialised plugins: $plugins"
+echo "Activating plugins: $plugins"
+echo ""
 
 # User configuration
 export VISUAL="vim"
