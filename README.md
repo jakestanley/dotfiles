@@ -9,6 +9,8 @@ I've been getting better at using Linux over the last two years and with that I 
 
 ## Packages
 
+Unless specified in parentheses, use the appropriate package manager for each operating system to install these packages.
+
 ### Arch Linux
 
 #### Required
@@ -37,13 +39,36 @@ I've been getting better at using Linux over the last two years and with that I 
 - yaourt (AUR)
 - chromium
 - gtk-theme-arc-git (AUR)
+- gitg
 
 #### Optional
 
 - tmux
+- golang
 - fzf
 - aws-cli
 - lxappearance
 - ultra-flat-icons-blue (AUR)
 - pandoc
 - spotify (AUR)
+
+### Windows
+
+#### Required
+
+- sublimetext3
+- vim
+- git
+
+#### Work
+
+- Docker Toolbox (manual)
+- awscli
+- Oracle JDK 8 (manual)
+- Oracle 11g (manual)
+- Oracle SQL Developer (manual)
+- Eclipse IDE for Java (manual)
+
+#### Optional
+
+- golang
