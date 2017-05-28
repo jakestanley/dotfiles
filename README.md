@@ -57,13 +57,20 @@ Unless specified in parentheses, use the appropriate package manager for each op
 #### Required
 
 - sublimetext3
-- vim
 - git
+
+#### Recommended
+- vim
+- 1password
+- Lightshot (manual)
+- virtualbox
+- putty
 
 #### Work
 
 - Docker Toolbox (manual)
 - awscli
+- maven
 - Oracle JDK 8 (manual)
 - Oracle 11g (manual)
 - Oracle SQL Developer (manual)
@@ -72,3 +79,6 @@ Unless specified in parentheses, use the appropriate package manager for each op
 #### Optional
 
 - golang
+- steam
+- winscp
+- veracrypt
