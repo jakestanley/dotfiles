@@ -175,6 +175,11 @@
     <keybind key="C-A-Left">
       <action name="GoToDesktop"/>
     </keybind>
+    <keybind key="S-W-t">
+      <action name="Execute">
+        <command>urxvt --font &quot;xft:Ubuntu Mono:antialias=true:size=12&quot;</command>
+      </action>
+    </keybind>
     <keybind key="W-Return">
       <action name="Execute">
         <command>urxvt</command>
