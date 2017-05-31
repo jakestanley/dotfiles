@@ -1,0 +1,37 @@
+# rofi (launcher)
+bindsym $mod+d exec rofi -show run
+bindsym $mod+s exec rofi -show ssh
+bindsym $mod+a exec rofi -show window
+
+# dmenu (launcher)
+# bindsym $mod+d exec dmenu_run -b
+
+# start a terminal
+bindsym $mod+Return exec urxvt
+
+# start a browser window
+bindsym $mod+b exec chromium-browser
+
+# start a file manager window
+bindsym $mod+n exec pcmanfm
+
+# start a text editor
+bindsym $mod+t exec subl
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# notifications
+bindsym $mod+p          exec notify-send "suppressing notifications" -t 2       && sleep 4 && pkill -u "$USER" -USR1 dunst
+bindsym $mod+Shift+p    exec pkill -u "$USER" -USR2 dunst                       && notify-send "resuming notifications" -t 2
+
+# volume controls
+bindsym $mod+Shift+c exec amixer -D pulse set Master 5%+  unmute
+bindsym $mod+Shift+z exec amixer -D pulse set Master 5%- unmute
+bindsym $mod+Shift+x exec amixer -D pulse set Master 1+ toggle
+
+# take a selection screenshot
+bindsym $mod+Shift+s exec shutter --s
+
+# open calculator
+bindsym $mod+Shift+d exec gnome-calculator

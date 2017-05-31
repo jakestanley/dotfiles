@@ -1,0 +1,45 @@
+# workspaces
+
+set $tag1 "1: terminal"
+set $tag2 "2: eclipse"
+set $tag3 "3: text"
+set $tag4 "4: versioning"
+set $tag5 "5: misc"
+set $tag6 "6: web"
+set $tag7 "7: databases"
+set $tag8 "8: music"
+set $tag9 "9: comms"
+set $tag10 "10: files"
+set $tag11 "####"
+
+# assignments
+assign [class="Eclipse"] $tag2
+assign [class="subl"] $tag3
+assign [class="chromium-browser"] $tag6
+assign [class="chromium"] $tag6
+assign [class="gitg"] $tag4
+assign [class="spotify"] $tag8
+assign [class="Spotify"] $tag8
+assign [class="Slack"] $tag9
+assign [class="Mail"] $tag9
+assign [class="mysql-workbench-bin"] $tag7
+assign [class="sun-awt-X11-XFramePeer"] $tag7
+
+# # i3-gaps
+
+# # set global gaps
+# set $default_gaps_inner 10
+# set $default_gaps_outer 0
+
+# gaps inner $default_gaps_inner
+# gaps outer $default_gaps_outer
+
+# # override global gaps individually
+# workspace $tag3 gaps outer 0
+# workspace $tag3 gaps inner 0
+
+# workspace $tag6 gaps outer 0
+# workspace $tag6 gaps inner 0
+
+# workspace $tag9 gaps outer 0
+# workspace $tag9 gaps inner 0

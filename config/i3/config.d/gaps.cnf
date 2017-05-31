@@ -1,0 +1,4 @@
+# set global gaps
+
+gaps inner 8
+gaps outer 16

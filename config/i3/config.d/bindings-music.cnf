@@ -1,0 +1,11 @@
+## music controls
+
+# playpause spotify (music)
+bindsym $mod+x exec qdbus org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+bindsym $mod+z exec qdbus org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym $mod+c exec qdbus org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+
+# control mpd using mpc (music)
+#bindsym $mod+x exec mpc toggle
+#bindsym $mod+z exec mpc prev
+#bindsym $mod+c exec mpc next

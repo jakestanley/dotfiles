@@ -1,0 +1,59 @@
+# Solarized (Light) colours
+# set $S_base03        #002b36
+# set $S_base02        #073642
+# set $S_base01        #586e75
+# set $S_base00        #657b83
+# set $S_base0         #839496
+# set $S_base1         #93a1a1
+# set $S_base2         #eee8d5
+# set $S_base3         #fdf6e3
+# set $custom          #1c5766
+
+# Solarized (Dark) colours
+set $S_base03        #fdf6e3
+set $S_base02        #eee8d5
+set $S_base01        #93a1a1
+set $S_base00        #839496
+set $S_base0         #657b83
+set $S_base1         #586e75
+set $S_base2         #073642
+set $S_base3         #002b36
+set $custom          #e1cab3
+
+# Solarized accent colours
+set $S_yellow        #b58900
+set $S_orange        #cb4b16
+set $S_red           #dc322f
+set $S_magenta       #d33682
+set $S_violet        #6c71c4
+set $S_blue          #268bd2
+set $S_cyan          #2aa198
+set $S_green         #859900
+
+# set client colors
+
+# clientclass                   border       backgr.      text        indicator
+client.focused                  $S_base0     $S_green     $S_base3    $S_blue
+client.focused_inactive         $S_base0     $S_cyan      $S_base2    $S_violet
+client.unfocused                $S_base0     $S_base02    $S_base1    $S_base01
+client.urgent                   $S_base0     $S_yellow    $S_base3    $S_orange
+
+# bar and status config
+bar {
+        colors {
+                # status
+                background $S_base3
+                statusline $S_base1
+                separator  $S_base1
+
+              # workspace          border     background  text
+
+                focused_workspace  $S_base3   $S_green    $S_base03
+                active_workspace   $S_base3   $S_violet   $S_base03
+                inactive_workspace $S_base3   $S_base2    $S_base03
+                urgent_workspace   $S_base3   $S_magenta  $S_base03
+
+        }
+        position top
+        status_command i3status -c ~/.config/i3/i3status.conf
+}

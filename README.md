@@ -24,6 +24,8 @@ Unless specified in parentheses, use the appropriate package manager for each op
 - obconf
 - rxvt-unicode
 - openbox
+- i3-gaps (AUR)
+- i3status
 - lemonbar (AUR)
 - xdotool
 - sublime-text-dev (AUR)
@@ -51,6 +53,7 @@ Unless specified in parentheses, use the appropriate package manager for each op
 - ultra-flat-icons-blue (AUR)
 - pandoc
 - spotify (AUR)
+- slack-desktop (AUR)
 
 ### Windows
 
