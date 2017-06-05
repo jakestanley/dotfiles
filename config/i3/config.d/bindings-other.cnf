@@ -9,6 +9,9 @@ bindsym $mod+a exec rofi -show window
 # start a terminal
 bindsym $mod+Return exec urxvt
 
+# start a phat terminal
+bindsym $mod+Shift+Return exec urxvt --font 'xft:Ubuntu Mono:antialias=true:size=12'
+
 # start a browser window
 bindsym $mod+b exec chromium-browser
 
