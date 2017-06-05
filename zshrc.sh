@@ -86,7 +86,6 @@ export VISUAL="vim"
 export SVN_EDITOR="vim"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:$HOME/bin/Sencha/Cmd/4.0.5.87:$HOME/bin:$HOME/opt/jdk/jre/bin:/usr/bin/core_perl:$HOME/.pilau/lemonbar":$HOME/opt/sqldeveloper
 export DOTFILES_REPO_DIR="${HOME}/dotfiles"
-export ECLIPSE_HOME="${HOME}/eclipse"
 export GOPATH="${HOME}/Code/Go"
 
 if [ "$OS" = 'Darwin' ]; then

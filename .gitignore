@@ -8,5 +8,8 @@
 *.crt
 *.last-run
 
+# ignore generated i3 config file
+config/i3/config
+
 SublimeLinter.sublime-settings
 
