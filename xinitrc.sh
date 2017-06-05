@@ -1,6 +1,9 @@
 #!/bin/zsh
 
+# set the keyboard mappings
 ~/.xinitrc.d/setxkbmap.sh &
+
+# merge the xrdb resources
 xrdb -merge ~/.Xresources &
 
 # build i3 config file
@@ -30,5 +33,5 @@ if which compton >/dev/null; then
     compton -b &
 fi
 
-exec openbox-session
-
+# exec chosen window manager
+exec $REAL_WM
