@@ -17,6 +17,7 @@ assign [class="Eclipse"] $tag2
 assign [class="subl"] $tag3
 assign [class="chromium-browser"] $tag6
 assign [class="chromium"] $tag6
+assign [class="Chromium"] $tag6
 assign [class="gitg"] $tag4
 assign [class="spotify"] $tag8
 assign [class="Spotify"] $tag8
@@ -37,9 +38,3 @@ assign [class="sun-awt-X11-XFramePeer"] $tag7
 # # override global gaps individually
 # workspace $tag3 gaps outer 0
 # workspace $tag3 gaps inner 0
-
-# workspace $tag6 gaps outer 0
-# workspace $tag6 gaps inner 0
-
-# workspace $tag9 gaps outer 0
-# workspace $tag9 gaps inner 0
