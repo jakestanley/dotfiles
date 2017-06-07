@@ -46,3 +46,5 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias destroy='rm -rf'
+
+alias cf='aws cloudformation'
