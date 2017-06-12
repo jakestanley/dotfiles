@@ -30,12 +30,12 @@ fi
 
 # compton (if it's installed and that's your thing)
 if which compton >/dev/null; then
-    # compton -b &
+    compton -b &
 fi
 
 # dunst (if it's installed and that's your thing)
 if which dunst >/dev/null; then
-    dunst
+    dunst &
 fi
 
 # exec chosen window manager
