@@ -35,6 +35,7 @@ Unless specified in parentheses, use the appropriate package manager for each op
 - feh
 - dunst
 - rofi
+- xorg-xsetroot
 
 #### Recommended
 

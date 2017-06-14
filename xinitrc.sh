@@ -4,7 +4,7 @@
 ~/.xinitrc.d/setxkbmap.sh &
 
 # merge the xrdb resources
-xrdb -merge ~/.Xresources &
+xrdb -override ~/.Xresources
 
 # build i3 config file
 rm ~/.config/i3/config
@@ -37,6 +37,9 @@ fi
 if which dunst >/dev/null; then
     dunst &
 fi
+
+# set solarized background color. TODO make this more portable
+xsetroot -solid "#93a1a1" &
 
 # exec chosen window manager
 exec $REAL_WM
