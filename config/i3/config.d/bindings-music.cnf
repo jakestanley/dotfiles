@@ -9,3 +9,4 @@ bindsym $mod+c exec qdbus org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2
 #bindsym $mod+x exec mpc toggle
 #bindsym $mod+z exec mpc prev
 #bindsym $mod+c exec mpc next
+

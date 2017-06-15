@@ -11,6 +11,15 @@ I've been getting better at using Linux over the last two years and with that I 
 
 Unless specified in parentheses, use the appropriate package manager for each operating system to install these packages.
 
+### Sublime Text
+
+Whilst not an operating system, it's important that the packages installed in Sublime Text are consistent.
+
+- Boxy Theme
+- TrailingSpaces
+- SqlBeautifier
+- AppendComma
+
 ### Arch Linux
 
 #### Required
