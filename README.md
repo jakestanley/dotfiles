@@ -20,6 +20,14 @@ Whilst not an operating system, it's important that the packages installed in Su
 - SqlBeautifier
 - AppendComma
 
+### Chrome/Chromium
+
+Whilst not really packages, these are what I consider to be essential extensions.
+
+- Privacy Badger
+- Vimium
+- JSON Viewer
+
 ### Arch Linux
 
 #### Required
