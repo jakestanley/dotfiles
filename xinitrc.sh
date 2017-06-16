@@ -1,25 +1,16 @@
 #!/bin/zsh
 
+# initialise the theme variable
+export THEME="theme_solarized_light"
+
 # set the keyboard mappings
 ~/.xinitrc.d/setxkbmap.sh &
 
 # merge the xrdb resources
-xrdb -override ~/.Xresources
+xrdb -DTHEME="<$DOTFILES_REPO_DIR/Xresources.d/$THEME>" -merge ~/.Xresources
 
-# build i3 config file
-rm ~/.config/i3/config
-cat \
-    ~/.config/i3/config.d/top.cnf \
-    ~/.config/i3/config.d/gaps.cnf \
-    ~/.config/i3/config.d/workspaces.cnf \
-    ~/.config/i3/config.d/bindings-i3.cnf \
-    ~/.config/i3/config.d/bindings-other.cnf \
-    ~/.config/i3/config.d/bindings-music.cnf \
-    ~/.config/i3/config.d/colors.cnf \
-    ~/.config/i3/config.d/keys.cnf \
-    ~/.config/i3/config.d/mode-resize.cnf \
-    ~/.config/i3/config.d/bottom.cnf \
->> ~/.config/i3/config
+# build i3 config file (blocking as i3 can't be launched without it)
+~/.xinitrc.d/i3build.sh
 
 # set up monitors configuration
 ~/.xinitrc.d/monitors.sh &

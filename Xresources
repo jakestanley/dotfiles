@@ -1,15 +1,15 @@
-#include ".Xresources.d/theme_solarized_dark"
+#include THEME
 
 *background: C_color8
 *foreground: C_color12
 
 rofi.opacity: 95
-rofi.terminal: urxvt 
+rofi.terminal: urxvt
 rofi.borderwidth: 2
 rofi.bordercolor: C_color9
 rofi.font: Ubuntu 10
 urxvt.background: [95]C_color8
-urxvt.font: xft:Schumacher Clean:antialias=false:size=10
+urxvt.font: xft:Ubuntu Mono:antialias=true:size=11
 urxvt.letterSpace: 0
 urxvt.scrollBar: false
 urxvt.depth: 32
