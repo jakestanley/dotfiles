@@ -60,6 +60,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 - chromium
 - gtk-theme-arc-git (AUR)
 - gitg
+- xorg-xcalc
 
 #### Optional
 
