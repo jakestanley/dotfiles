@@ -14,8 +14,8 @@
         "file": "res://Packages/Default/Delete Line.sublime-macro"
     }
 }, {
-    "keys": ["ctrl+shift+o"],
-    "command": "prompt_open_project"
+    "keys": ["ctrl+alt+shift+p"],
+    "command": "prompt_switch_project"
 }, {
     "keys": ["ctrl+,"],
     "command": "append_comma",
@@ -23,12 +23,24 @@
         "enter_new_line": "false"
     }
 }, {
+    "keys": ["ctrl+shift+,"],
+    "command": "append_comma",
+    "args": {
+        "enter_new_line": "true"
+    }
+}, {
     "keys": ["alt+m"],
     "command": "toggle_menu"
 }, {
-    "keys": ["ctrl+k", "ctrl+t"], 
-    "command": "toggle_tabs" 
+    "keys": ["ctrl+k", "ctrl+t"],
+    "command": "toggle_tabs"
 }, {
-    "keys": ["ctrl+k", "ctrl+s"], 
-    "command": "toggle_status_bar" 
+    "keys": ["ctrl+k", "ctrl+s"],
+    "command": "toggle_status_bar"
+}, {
+    "keys": ["alt+w"],
+    "command": "toggle_setting",
+    "args": {
+        "setting": "word_wrap"
+    }
 }]
