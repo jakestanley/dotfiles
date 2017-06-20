@@ -48,3 +48,4 @@ alias l='ls -CF'
 alias destroy='rm -rf'
 
 alias cf='aws cloudformation'
+alias dicker='docker'
