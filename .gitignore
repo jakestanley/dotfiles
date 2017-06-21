@@ -12,4 +12,5 @@
 config/i3/config
 
 SublimeLinter.sublime-settings
+Package Control.sublime-settings
 

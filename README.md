@@ -19,6 +19,8 @@ Whilst not an operating system, it's important that the packages installed in Su
 - TrailingSpaces
 - SqlBeautifier
 - AppendComma
+- TypeScript
+- AppendSemiColon
 
 ### Chrome/Chromium
 
