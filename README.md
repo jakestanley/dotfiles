@@ -59,7 +59,10 @@ Whilst not really packages, these are what I consider to be essential extensions
 #### Recommended
 
 - yaourt (AUR)
+- noto-fonts
 - chromium
+- sqlcl (AUR)
+- ultra-flat-icons-blue (AUR)
 - gtk-theme-arc-git (AUR)
 - gitg
 - xorg-xcalc
@@ -73,10 +76,10 @@ Whilst not really packages, these are what I consider to be essential extensions
 - fzf
 - aws-cli
 - lxappearance
-- ultra-flat-icons-blue (AUR)
 - pandoc
 - spotify (AUR)
 - slack-desktop (AUR)
+- golang
 
 ### Windows
 
