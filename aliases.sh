@@ -47,6 +47,8 @@ alias l='ls -CF'
 
 alias destroy='rm -rf'
 
-alias cf='aws cloudformation'
+alias cf='aws cloudformation --region eu-west-1'
 alias dicker='docker'
 alias df='df -T'
+alias sf='screenfetch'
+
