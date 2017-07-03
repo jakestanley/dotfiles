@@ -4,10 +4,8 @@
 #include ".themes.d/xresources.d/base16-solarized-dark.Xresources"
 #endif
 
-rofi.opacity: 95
-rofi.terminal: urxvt
-rofi.borderwidth: 2
-rofi.font: Ubuntu 10
+#include ".Xresources.d/rofi.Xresources"
+
 urxvt.font: xft:Ubuntu Mono:antialias=true:size=11
 urxvt.letterSpace: 0
 urxvt.scrollBar: false
