@@ -129,4 +129,6 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
 
+export THEME="base16-solarized-dark"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

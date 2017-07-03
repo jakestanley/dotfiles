@@ -8,8 +8,9 @@
 *.crt
 *.last-run
 
-# ignore generated i3 config file
+# ignore generated files
 config/i3/config
+config/dunst/dunstrc
 
 SublimeLinter.sublime-settings
 Package Control.sublime-settings

@@ -7,7 +7,7 @@ export THEME="base16-solarized-dark"
 ~/.xinitrc.d/setxkbmap.sh &
 
 # load the xrdb resources
-xrdb -DTHEME="<$DOTFILES_REPO_DIR/themes.d/xresources.d/${THEME}.xresources>" -load ~/.Xresources
+xrdb -DTHEME="<$DOTFILES_REPO_DIR/themes.d/xresources.d/${THEME}.Xresources>" -load ~/.Xresources
 
 # build i3 config file (blocking as i3 can't be launched without it)
 ~/.xinitrc.d/i3build.sh

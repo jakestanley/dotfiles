@@ -1,5 +1,4 @@
 # Basic bar configuration using the Base16 variables.
-
 bar {
     status_command i3status -c ~/.config/i3/i3status.conf
     position top
