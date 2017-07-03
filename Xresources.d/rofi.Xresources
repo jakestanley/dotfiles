@@ -8,6 +8,6 @@ rofi.terminal: urxvt
 rofi.matching: fuzzy
 rofi.separator-style: line
 rofi.color-normal:                   base01,base07,base00,base06,base01
-rofi.color-window:                   base01,base01
+rofi.color-window:                   base01,base05
 rofi.color-active:                   base01,base07,base00,base06,base01
 rofi.hide-scrollbar:                 true
