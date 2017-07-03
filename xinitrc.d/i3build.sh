@@ -1,12 +1,4 @@
 #!/bin/sh
-
-if [ -z "$THEME" ]; then
-    echo "THEME not set. Will use the default"
-    THEME="base16-solarized-dark"
-fi
-
-echo "Using theme \"$THEME\""
-
 rm ~/.config/i3/config
 cat \
     ~/.config/i3/config.d/top.cnf \
@@ -21,4 +13,3 @@ cat \
     ~/.config/i3/config.d/mode-resize.cnf \
     ~/.config/i3/config.d/bottom.cnf \
 >> ~/.config/i3/config
-

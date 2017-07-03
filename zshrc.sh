@@ -3,6 +3,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# export user theme
+export THEME="base16-grayscale-light"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -128,7 +131,5 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
-
-export THEME="base16-solarized-dark"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -1,12 +1,4 @@
-#!/bin/sh
-
-if [ -z "$THEME" ]; then
-    echo "THEME not set. Will use the default"
-    THEME="base16_default"
-fi
-
-echo "Using theme \"$THEME\""
-
+#!/bin/zsh
 rm ~/.config/dunst/dunstrc
 cat \
     ~/.themes.d/dunst.d/${THEME}.dunstrc \

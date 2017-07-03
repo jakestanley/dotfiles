@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-# initialise the theme variable
-export THEME="base16-solarized-dark"
-
 # set the keyboard mappings
 ~/.xinitrc.d/setxkbmap.sh &
 
