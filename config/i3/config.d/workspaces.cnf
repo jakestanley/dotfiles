@@ -15,6 +15,8 @@ set $tag11 "####"
 # assignments
 assign [class="Eclipse"] $tag2
 assign [class="subl"] $tag3
+assign [class="subl3"] $tag3
+assign [class="Subl3"] $tag3
 assign [class="chromium-browser"] $tag6
 assign [class="chromium"] $tag6
 assign [class="Chromium"] $tag6
