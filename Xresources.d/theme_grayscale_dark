@@ -1,0 +1,18 @@
+#define C_color0:       #101010
+#define C_color1:       #7c7c7c
+#define C_color2:       #8e8e8e
+#define C_color3:       #a0a0a0
+#define C_color4:       #686868
+#define C_color5:       #747474
+#define C_color6:       #868686
+#define C_color7:       #b9b9b9
+#define C_color8:       #525252
+#define C_color9:       #7c7c7c
+#define C_color10:      #8e8e8e
+#define C_color11:      #a0a0a0
+#define C_color12:      #686868
+#define C_color13:      #747474
+#define C_color14:      #868686
+#define C_color15:      #f7f7f7
+
+#include "apply_palette"
