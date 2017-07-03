@@ -172,23 +172,6 @@
     # Context menu.
     context = ctrl+shift+period
 
-[urgency_low]
-    # IMPORTANT: colors have to be defined in quotation marks.
-    # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#073642"
-    foreground = "#839496"
-    timeout = 10
-
-[urgency_normal]
-    background = "#073642"
-    foreground = "#839496"
-    timeout = 10
-
-[urgency_critical]
-    background = "#dc322f"
-    foreground = "#2aa198"
-    timeout = 10
-
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
 # Messages can be matched by "appname", "summary", "body", "icon", "category",

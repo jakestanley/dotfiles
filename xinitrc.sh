@@ -1,13 +1,13 @@
 #!/bin/zsh
 
 # initialise the theme variable
-export THEME="theme_solarized_light"
+export THEME="base16-solarized-dark"
 
 # set the keyboard mappings
 ~/.xinitrc.d/setxkbmap.sh &
 
-# merge the xrdb resources
-xrdb -DTHEME="<$DOTFILES_REPO_DIR/Xresources.d/$THEME>" -merge ~/.Xresources
+# load the xrdb resources
+xrdb -DTHEME="<$DOTFILES_REPO_DIR/themes.d/xresources.d/${THEME}.xresources>" -load ~/.Xresources
 
 # build i3 config file (blocking as i3 can't be launched without it)
 ~/.xinitrc.d/i3build.sh
@@ -26,6 +26,8 @@ fi
 
 # dunst (if it's installed and that's your thing)
 if which dunst >/dev/null; then
+    # build dunst config file (blocks so dunst doesn't launch without it)
+    ~/.xinitrc.d/build_dunst.sh
     dunst &
 fi
 

@@ -1,14 +1,13 @@
+#ifdef THEME
 #include THEME
-
-*background: C_color8
-*foreground: C_color12
+#else
+#include ".themes.d/xresources.d/base16-solarized-dark.Xresources"
+#endif
 
 rofi.opacity: 95
 rofi.terminal: urxvt
 rofi.borderwidth: 2
-rofi.bordercolor: C_color9
 rofi.font: Ubuntu 10
-urxvt.background: [95]C_color8
 urxvt.font: xft:Ubuntu Mono:antialias=true:size=11
 urxvt.letterSpace: 0
 urxvt.scrollBar: false
