@@ -15,7 +15,7 @@ cat \
     ~/.config/i3/config.d/bindings-i3.cnf \
     ~/.config/i3/config.d/bindings-other.cnf \
     ~/.config/i3/config.d/bindings-music.cnf \
-    ~/.config/i3/config.d/${THEME}.cnf \
+    ~/.config/i3/themes.d/${THEME}.cnf \
     ~/.config/i3/config.d/colors.cnf \
     ~/.config/i3/config.d/keys.cnf \
     ~/.config/i3/config.d/mode-resize.cnf \
