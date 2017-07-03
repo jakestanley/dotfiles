@@ -61,6 +61,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 - yaourt (AUR)
 - noto-fonts
 - chromium
+- fzf
 - sqlcl (AUR)
 - ultra-flat-icons-blue (AUR)
 - gtk-theme-arc-git (AUR)
@@ -73,7 +74,6 @@ Whilst not really packages, these are what I consider to be essential extensions
 
 - tmux
 - golang
-- fzf
 - aws-cli
 - lxappearance
 - pandoc
