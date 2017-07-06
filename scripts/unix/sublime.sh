@@ -7,8 +7,11 @@ echo $OS
 
 if [ "$OS" == 'Darwin' ]; then
     SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 3"
-else
+elif [ "$OS" == 'Linux' ]; then
     SUBLIME_DIR="$HOME/.config/sublime-text-3"
+else
+    echo "Environment ${OS} is not supported"
+    exit 1
 fi
 
 echo "sublime dir..."
