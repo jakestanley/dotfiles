@@ -71,9 +71,12 @@ echo "Detected environment: $OS"
 
 if [ "$OS" = 'Darwin' ]; then
     additional_plugins="osx brew brew-cask"
+elif [ "$OS" = 'FreeBSD' ]; then
+    # currently FreeBSD doesn't have any specific plugins
+    additional_plugins=""
 else
     # assume arch linux. what's the worst that could happen?
-    additional_plugins="archlinux"
+    additional_plugins="archlinux systemd"
 fi
 
 plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws \
