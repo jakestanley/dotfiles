@@ -20,8 +20,7 @@ ZSH_THEME="lukerandall"
 HYPHEN_INSENSITIVE="true"
 
 # Prevent duplicates in zsh history
-HIST_IGNORE_ALL_DUPS="true"
-
+setopt hist_ignorealldups
 # Prevent finding duplicates in zsh history
 HIST_FIND_NO_DUPS="true"
 
@@ -136,3 +135,4 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 source ~/.aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+setopt hist_ignorealldups

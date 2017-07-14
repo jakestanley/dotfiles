@@ -9,11 +9,13 @@ set $tag6 "6: web"
 set $tag7 "7: databases"
 set $tag8 "8: music"
 set $tag9 "9: slack"
-set $tag10 "10: files"
+set $tag10 "10: misc"
 set $tag11 "####"
 
 # assignments
-assign [class="Eclipse"] $tag2
+assign [class="Eclipse$"] $tag2
+assign [class="EclipseTrader"] $tag10
+assign [class="eclipsetrader"] $tag10
 assign [class="subl"] $tag3
 assign [class="subl3"] $tag3
 assign [class="Subl3"] $tag3
