@@ -1,26 +1,25 @@
+#!/bin/sh
+
+# set directory
+export LBDIR=$DOTFILES_REPO_DIR/pilau/lemonbar
+
+# functions
+__get_dims() {
+    source $LBDIR/lemonbar_dimensions.sh
+}
+
+__get_theme() {
+    source $LBDIR/lemonbar_theme.sh
+}
+
 while true; do
 
-    # get the data
-    nowplaying=$(echo " ")
-    nowplaying=$nowplaying$(echo \
-        `dbus-send --print-reply \--dest=org.mpris.MediaPlayer2.spotify \
-         /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get \
-         string:'org.mpris.MediaPlayer2.Player' string:'Metadata'|\
-         egrep -A 2 "artist"|egrep -v "artist"|egrep -v "array"|cut -b 27-|\
-         cut -d '"' -f 1|egrep -v ^$` "-" `dbus-send --print-reply \
-         --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 \
-         org.freedesktop.DBus.Properties.Get \
-         string:'org.mpris.MediaPlayer2.Player' string:'Metadata'|\
-         egrep -A 1 "title"|egrep -v "title"|cut -b 44-|cut -d '"' -f 1|\
-         egrep -v ^$`)
-	datetime=$(date +"%H:%M %A %d")
+    # this should allow for changing data configuration on the fly
+    source $LBDIR/lemonbar_data.sh
 
-    # build the bar
+    # echo the output so it pipes to lemonbar
+    echo $BAR_OUTPUT
 
-    # set render monitor
-    bar=$(echo %{S0})
-#    bar=$bar$(echo %{l})$nowplaying
-#    bar=$bar$(echo "%{c}")$datetime
-    echo $bar
-	sleep 1s
-done | lemonbar -g 1680x16+0+0 -B \#334455
+	sleep 5s
+
+done | lemonbar -g $(__get_dims) -B $(__get_theme)

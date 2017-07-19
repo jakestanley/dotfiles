@@ -3,7 +3,6 @@ feh --bg-center ~/wallpaper.* &
 
 # rice shit
 ~/.pilau/lemonbar/lemonbar.sh &
-~/.pilau/lemonbar/lemonbar2.sh &
 
 # work shit
 urxvt &

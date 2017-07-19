@@ -45,7 +45,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 - openbox
 - i3-gaps (AUR)
 - i3status
-- lemonbar (AUR)
+- lemonbar-git (AUR)
 - xdotool
 - sublime-text-dev (AUR)
 - pcmanfm
