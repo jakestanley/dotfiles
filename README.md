@@ -68,7 +68,9 @@ Whilst not really packages, these are what I consider to be essential extensions
 - gitg
 - xorg-xcalc
 - xorg-xkill
+- xorg-xfontsel
 - meld
+- jq
 
 #### Optional
 
