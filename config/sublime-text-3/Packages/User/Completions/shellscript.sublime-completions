@@ -1,0 +1,9 @@
+{
+    "scope": [ "source.sh", "source.bash" ],
+    "completions": [
+
+        // AWS
+        // last parameter is for easily adding a CR escape character
+        "ParameterKey=${1},ParameterValue=${2} ${3}"
+    ]
+}
