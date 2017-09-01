@@ -62,8 +62,6 @@ HIST_REDUCE_BLANKS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws)
-
 OS=`uname -s`
 echo ""
 echo "Detected environment: $OS"
@@ -78,7 +76,7 @@ else
     additional_plugins="archlinux systemd"
 fi
 
-plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws \
+plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws spring \
          $additional_plugins)
 
 echo "Activating plugins: $plugins"
@@ -89,7 +87,11 @@ source ~/.zshrc.d/*
 # User configuration
 export VISUAL="vim"
 export SVN_EDITOR="vim"
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:$HOME/bin/Sencha/Cmd/4.0.5.87:$HOME/bin:$HOME/opt/jdk/jre/bin:/usr/bin/core_perl:$HOME/.pilau/lemonbar":$HOME/opt/sqldeveloper
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:\
+$HOME/opt/jdk/jre/bin:/usr/bin/core_perl:\
+$HOME/.pilau/lemonbar:$HOME/opt/sqldeveloper:\
+$HOME/git/hermes/tools/bin:\
+$HOME/bin"
 export DOTFILES_REPO_DIR="${HOME}/dotfiles"
 export GOPATH="${HOME}/Code/Go"
 
@@ -133,6 +135,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
+source ~/.zshrc.d/functions.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 setopt hist_ignorealldups
