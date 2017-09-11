@@ -82,8 +82,6 @@ plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws spring \
 echo "Activating plugins: $plugins"
 echo ""
 
-source ~/.zshrc.d/*
-
 # User configuration
 export VISUAL="vim"
 export SVN_EDITOR="vim"

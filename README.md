@@ -45,7 +45,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 - openbox
 - i3-gaps (AUR)
 - i3status
-- lemonbar-git (AUR)
+- lemonbar-xft-git (AUR)
 - xdotool
 - sublime-text-dev (AUR)
 - pcmanfm
@@ -71,6 +71,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 - xorg-xfontsel
 - meld
 - jq
+- escrotum-git (AUR)
 
 #### Optional
 
@@ -86,6 +87,12 @@ Whilst not really packages, these are what I consider to be essential extensions
 #### Deprecated
 
 - rxvt-unicode - terminator has a few more creature comforts, but albeit is not as easily customised with xresources
+
+#### In School
+
+These packages are currently being trialled. If I find them to compliment my workflow, they will be "graduated" to recommended, required, or optional.
+
+- myrepos (AUR)
 
 ### Windows
 
