@@ -32,5 +32,6 @@ if which i3 >/dev/null; then
     ~/.xinitrc.d/builders/i3.sh
 fi
 
-# exec chosen window manager
-exec $REAL_WM
+# set solarized background color. TODO make this more portable
+# xsetroot -solid "#93a1a1" &
+exec $WM
