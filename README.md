@@ -41,7 +41,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 - ohmyzsh
 - obkey (AUR)
 - obconf
-- rxvt-unicode
+- terminator
 - openbox
 - i3-gaps (AUR)
 - i3status
@@ -82,6 +82,10 @@ Whilst not really packages, these are what I consider to be essential extensions
 - spotify (AUR)
 - slack-desktop (AUR)
 - golang
+
+#### Deprecated
+
+- rxvt-unicode - terminator has a few more creature comforts, but albeit is not as easily customised with xresources
 
 ### Windows
 

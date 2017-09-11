@@ -1,0 +1,6 @@
+# set the default applications to be used by i3
+
+set $default_terminal terminator
+set $default_browser chromium-browser
+set $default_filemanager pcmanfm
+set $default_texteditor subl3

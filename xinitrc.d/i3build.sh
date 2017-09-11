@@ -2,6 +2,7 @@
 rm ~/.config/i3/config
 cat \
     ~/.config/i3/config.d/top.cnf \
+    ~/.config/i3/config.d/defaults.cnf \
     ~/.config/i3/config.d/gaps.cnf \
     ~/.config/i3/config.d/workspaces.cnf \
     ~/.config/i3/config.d/bindings-i3.cnf \
