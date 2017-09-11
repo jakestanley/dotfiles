@@ -6,9 +6,6 @@
 # load the xrdb resources
 xrdb -DTHEME="<$DOTFILES_REPO_DIR/themes.d/xresources.d/${THEME}.Xresources>" -load ~/.Xresources
 
-# build i3 config file (blocking as i3 can't be launched without it)
-~/.xinitrc.d/i3build.sh
-
 # set up monitors configuration
 ~/.xinitrc.d/monitors.sh &
 
@@ -21,15 +18,19 @@ if which compton >/dev/null; then
     compton -b &
 fi
 
+# run builders. you could use checksums here to save some trivial cpu effort
+
 # dunst (if it's installed and that's your thing)
 if which dunst >/dev/null; then
     # build dunst config file (blocks so dunst doesn't launch without it)
-    ~/.xinitrc.d/build_dunst.sh
+    ~/.xinitrc.d/builders/dunst.sh
     dunst &
 fi
 
-# set solarized background color. TODO make this more portable
-xsetroot -solid "#93a1a1" &
+# build i3 config file (blocking as i3 can't be launched without it)
+if which i3 >/dev/null; then
+    ~/.xinitrc.d/builders/i3.sh
+fi
 
 # exec chosen window manager
 exec $REAL_WM
