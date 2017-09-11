@@ -43,6 +43,7 @@ co = checkout
 empty = checkout -- .
 
 nb = checkout -b
+cb = checkout -b
 db = branch -D
 
 s = status
