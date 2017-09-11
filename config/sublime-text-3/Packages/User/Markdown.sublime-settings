@@ -1,8 +1,8 @@
 {
     "wordwrap": "true",
-    "rulers": [-4, 84],
+    "rulers": [-4, 124],
     "draw_centered": true,
     "line_numbers": false,
-    "wrap_width": 80,
+    "wrap_width": 120,
     "gutter": false
 }
