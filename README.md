@@ -15,12 +15,18 @@ Unless specified in parentheses, use the appropriate package manager for each op
 
 Whilst not an operating system, it's important that the packages installed in Sublime Text are consistent.
 
+- Package Control (obviously. can be installed from the command palette)
 - Boxy Theme
 - TrailingSpaces
 - SqlBeautifier
 - AppendComma
 - TypeScript
 - AppendSemiColon
+- ShellScriptImproved
+- TrailingSpaces
+- YAML Nav
+- Markdown Preview
+- JsFormat
 
 ### Chrome/Chromium
 
