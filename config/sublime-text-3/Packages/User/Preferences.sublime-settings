@@ -1,7 +1,7 @@
 {
 	"caret_extra_width": 8,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Solarized Dark.tmTheme",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Tomorrow.tmTheme",
 	"draw_white_space": "selection",
 	"enable_tab_scrolling": false,
 	"file_exclude_patterns":
@@ -50,6 +50,6 @@
 	],
 	"show_full_path": false,
 	"tab_size": 4,
-	"theme": "Boxy Solarized Dark.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
