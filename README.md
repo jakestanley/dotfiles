@@ -124,3 +124,5 @@ These packages are currently being trialled. If I find them to compliment my wor
 - steam
 - winscp
 - veracrypt
+- itunes
+- spotify
