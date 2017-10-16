@@ -16,12 +16,17 @@
 		"*.pyc",
 		"*.min.js",
 		".classpath",
-		"*.exe"
+		"*.exe",
+		".idea",
+		".settings",
+		".project"
 	],
 	"folder_exclude_patterns":
 	[
 		"*.cache",
 		"build",
+		".idea",
+		".settings",
 		"node_modules",
 		"docs",
 		"bower_components",
