@@ -11,7 +11,7 @@ I've been getting better at using Linux over the last two years and with that I 
 
 Unless specified in parentheses, use the appropriate package manager for each operating system to install these packages.
 
-### Sublime Text
+### Sublime Text 3
 
 Whilst not an operating system, it's important that the packages installed in Sublime Text are consistent.
 
@@ -27,6 +27,7 @@ Whilst not an operating system, it's important that the packages installed in Su
 - YAML Nav
 - Markdown Preview
 - JsFormat
+- Git
 
 ### Chrome/Chromium
 
@@ -38,7 +39,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 
 ### Arch Linux
 
-#### Required
+#### Required/Work
 
 - zsh
 - xorg-xinit
@@ -46,6 +47,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 - git
 - ohmyzsh
 - obkey (AUR)
+- aws-cli (AUR)
 - obconf
 - terminator
 - openbox
@@ -53,7 +55,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 - i3status
 - lemonbar-xft-git (AUR)
 - xdotool
-- sublime-text-dev (AUR)
+- sublime-text - [repository](https://www.sublimetext.com/docs/3/linux_repositories.html#pacman)
 - pcmanfm
 - xscreensaver
 - ttf-ubuntu-font-family
@@ -61,13 +63,14 @@ Whilst not really packages, these are what I consider to be essential extensions
 - dunst
 - rofi
 - xorg-xsetroot
+- tk (dependency for gitk for some reason)
+- chromium
+- fzf [github](https://github.com/junegunn/fzf/)
 
 #### Recommended
 
 - yaourt (AUR)
 - noto-fonts
-- chromium
-- fzf
 - sqlcl (AUR)
 - ultra-flat-icons-blue (AUR)
 - gtk-theme-arc-git (AUR)
@@ -78,12 +81,14 @@ Whilst not really packages, these are what I consider to be essential extensions
 - meld
 - jq
 - escrotum-git (AUR)
+- myrepos (AUR)
+- lightdm
+- lightdm-gtk-greeter
 
 #### Optional
 
 - tmux
 - golang
-- aws-cli
 - lxappearance
 - pandoc
 - spotify (AUR)
@@ -98,7 +103,6 @@ Whilst not really packages, these are what I consider to be essential extensions
 
 These packages are currently being trialled. If I find them to compliment my workflow, they will be "graduated" to recommended, required, or optional.
 
-- myrepos (AUR)
 
 ### Windows
 
