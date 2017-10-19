@@ -15,7 +15,7 @@ Unless specified in parentheses, use the appropriate package manager for each op
 
 Whilst not an operating system, it's important that the packages installed in Sublime Text are consistent.
 
-- Package Control (obviously. can be installed from the command palette)
+- Package Control
 - Boxy Theme
 - TrailingSpaces
 - SqlBeautifier
@@ -35,7 +35,16 @@ Whilst not really packages, these are what I consider to be essential extensions
 
 - Privacy Badger
 - Vimium
+- uBlock Origin
+
+#### Personal
+
+- 1Password
+
+#### Work
+
 - JSON Viewer
+- Lastpass
 
 ### Arch Linux
 
@@ -84,6 +93,7 @@ Whilst not really packages, these are what I consider to be essential extensions
 - myrepos (AUR)
 - lightdm
 - lightdm-gtk-greeter
+- postman-bin (AUR)
 
 #### Optional
 
@@ -94,15 +104,11 @@ Whilst not really packages, these are what I consider to be essential extensions
 - spotify (AUR)
 - slack-desktop (AUR)
 - golang
+- dconf-editor
 
 #### Deprecated
 
-- rxvt-unicode - terminator has a few more creature comforts, but albeit is not as easily customised with xresources
-
-#### In School
-
-These packages are currently being trialled. If I find them to compliment my workflow, they will be "graduated" to recommended, required, or optional.
-
+- rxvt-unicode
 
 ### Windows
 
