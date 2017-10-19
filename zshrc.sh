@@ -135,5 +135,13 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 source ~/.aliases
 source ~/.zshrc.d/functions.zsh
 
+# create work aliases/functions file if it doesn't exist as the file should
+# not be persisted in a public repository for security reasons
+if [ -z ~/.zshrc.d/work.zsh ]; then
+    echo "#!/usr/bin/env zsh" >> ~/.zshrc.d/work.zsh
+    chmod u+x ~/.zshrc.d/work.zsh
+fi
+source ~/.zshrc.d/work.zsh
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 setopt hist_ignorealldups

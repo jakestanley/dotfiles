@@ -16,3 +16,6 @@ config/dunst/dunstrc
 SublimeLinter.sublime-settings
 Package Control.sublime-settings
 
+# ignore potentially security risk files
+zshrc.d/work.zsh
+
