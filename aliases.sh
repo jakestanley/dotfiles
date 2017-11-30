@@ -51,3 +51,6 @@ alias cf='aws cloudformation --region eu-west-1'
 alias dicker='docker'
 alias df='df -T'
 alias sf='screenfetch'
+
+# permissions, etc
+alias ugx='chmod ug+x'
