@@ -1,9 +1,9 @@
 # workspaces
 
-set $tag1 "1: terminal"
+set $tag1 "1: term"
 set $tag2 "2: java"
 set $tag3 "3: text"
-set $tag4 "4: versioning"
+set $tag4 "4: git"
 set $tag5 "5: aws"
 set $tag6 "6: web"
 set $tag7 "7: databases"

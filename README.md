@@ -75,9 +75,6 @@ Whilst not really packages, these are what I consider to be essential extensions
 - tk (dependency for gitk for some reason)
 - chromium
 - fzf [github](https://github.com/junegunn/fzf/)
-
-#### Recommended
-
 - yaourt (AUR)
 - noto-fonts
 - sqlcl (AUR)
@@ -94,9 +91,6 @@ Whilst not really packages, these are what I consider to be essential extensions
 - lightdm
 - lightdm-gtk-greeter
 - postman-bin (AUR)
-
-#### Optional
-
 - tmux
 - golang
 - lxappearance

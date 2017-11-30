@@ -1,9 +1,17 @@
 {
-    "scope": [ "source.sh", "source.bash" ],
+    "scope": [ "source.sh", "source.bash", "source.zsh" ],
     "completions": [
 
         // AWS
         // last parameter is for easily adding a CR escape character
-        "ParameterKey=${1},ParameterValue=${2} ${3}"
+        "ParameterKey=${1},ParameterValue=${2} ${3}",
+
+        // shebangs shebangs, shemoves shemoves
+        "#!/usr/bin/env sh",
+        "#!/usr/bin/env bash",
+        "#!/usr/bin/env zsh",
+        "#!/bin/sh",
+        "#!/bin/bash",
+        "#!/bin/zsh"
     ]
 }
