@@ -7,6 +7,7 @@ Currently targeting Sublime Text 3 (Build 3143)
 ## Packages
 
 - Package Control
+- SublimeLinter
 - Boxy Theme
 - TrailingSpaces
 - SqlBeautifier
