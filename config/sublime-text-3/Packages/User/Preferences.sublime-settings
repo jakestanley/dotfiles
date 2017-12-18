@@ -6,6 +6,10 @@
 	"enable_tab_scrolling": false,
 	"file_exclude_patterns":
 	[
+		"*.iml",
+		"*.iws",
+		"*.ipr",
+		".springBeans",
 		"ext-*.js",
 		".DS_Store",
 		"*.bak",
@@ -33,7 +37,6 @@
 		".git",
 		"Package Control.cache",
 		"example",
-		"target",
 		".git",
 		"ace",
 		".mvn"
