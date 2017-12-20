@@ -89,7 +89,9 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:\
 $HOME/opt/jdk/jre/bin:/usr/bin/core_perl:\
 $HOME/.pilau/lemonbar:$HOME/opt/sqldeveloper:\
 $HOME/git/hermes/tools/bin:\
-$HOME/bin"
+$HOME/bin:\
+$HOME/.local/bin"
+
 export DOTFILES_REPO_DIR="${HOME}/dotfiles"
 export GOPATH="${HOME}/Code/Go"
 
@@ -140,7 +142,7 @@ source ~/.zshrc.d/functions.zsh
 
 # create work aliases/functions file if it doesn't exist as the file should
 # not be persisted in a public repository for security reasons
-if [ -z ~/.zshrc.d/work.zsh ]; then
+if [ ! -f ~/.zshrc.d/work.zsh ]; then
     echo "#!/usr/bin/env zsh" >> ~/.zshrc.d/work.zsh
     chmod u+x ~/.zshrc.d/work.zsh
 fi
