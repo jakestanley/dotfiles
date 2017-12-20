@@ -9,7 +9,7 @@ These packages are available in the official Arch Linux repositories
 - zsh
 - vim
 - jdk8-openjdk
-- docker
+- docker _(install this before setting up users so you can add them to the docker group)_
 - openssh
 - xorg-xinit
 - xorg-server
@@ -34,11 +34,20 @@ These packages are available in the official Arch Linux repositories
 - meld
 - jq
 - tmux
+- trash-cli
 - go
 - lxappearance
 - pandoc
 - dconf-editor
 - clementine
+
+## Creating users
+
+Run these commands as the root user.
+
+`useradd -m -s /bin/zsh jake`
+`passwd jake`
+`gpasswd -a jake docker`
 
 ## AUR
 
@@ -58,7 +67,7 @@ These packages are available in the official Arch Linux repositories
 
 ### Obtaining AUR packages
 
-You need to install these packages the good old fashioned AUR way in order to use Yaourt (front end for the AUR)
+You need to install these packages the good old fashioned AUR way in order to use Yaourt (front end for the AUR). You cannot run `makepkg` as the root user so you'll need to do this after creating your user account.
 
 - package-query [(AUR)](https://aur.archlinux.org/package-query.git)
 - yaourt [(AUR)](https://aur.archlinux.org/yaourt.git)
