@@ -5,6 +5,8 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 ## Packages
 
 - zsh
+- vim
+- jdk8-openjdk
 - xorg-xinit
 - xorg-server
 - git
@@ -35,6 +37,10 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 - pandoc
 - dconf-editor
 - clementine
+
+### Openbox
+
+These packages are specific to the Openbox desktop environment
 
 ## AUR
 
