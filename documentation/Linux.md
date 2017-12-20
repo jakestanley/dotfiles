@@ -2,7 +2,9 @@
 
 My distro of choice for a while has been Arch Linux. The AUR makes it really easy to get hold of non-core software.
 
-## Packages
+## Official Arch Linux packages
+
+These packages are available in the official Arch Linux repositories
 
 - zsh
 - vim
@@ -12,7 +14,6 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 - xorg-xinit
 - xorg-server
 - git
-- ohmyzsh
 - terminator
 - openbox
 - i3status
@@ -39,14 +40,23 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 - dconf-editor
 - clementine
 
-### Openbox
-
-_These packages are specific to the Openbox desktop environment_
-
-- openbox
-- obconf
-
 ## AUR
+
+- shellcheck (AUR)
+- obkey (AUR)
+- aws-cli (AUR)
+- i3-gaps (AUR)
+- sqlcl (AUR)
+- ultra-flat-icons-blue (AUR)
+- gtk-theme-arc-git (AUR)
+- escrotum-git (AUR)
+- myrepos (AUR)
+- postman-bin (AUR)
+- spotify (AUR)
+- slack-desktop (AUR)
+- swagger-codegen (AUR)
+
+### Obtaining AUR packages
 
 You need to install these packages the good old fashioned AUR way in order to use Yaourt (front end for the AUR)
 
@@ -63,22 +73,33 @@ cd ../yaourt
 makepkg -s -i
 ```
 
-*Packages*
+## Third party packages
 
-- mate (???)
-- sublime-text - [repository](https://www.sublimetext.com/docs/3/linux_repositories.html#pacman)
+These packages are provided via third party repositories and can be installed and updated with `pacman` once the repository has been added to the `pacman` configuration.
+
+- sublime-text [repository](https://www.sublimetext.com/docs/3/linux_repositories.html#pacman)
+
+## Manual installation
+
+Some software requires manual intervention. Fortunately this is a short list.
+
+- ohmyzsh [website](http://ohmyz.sh/)
 - fzf [github](https://github.com/junegunn/fzf/)
-- shellcheck (AUR)
+
+## Other
+
+These packages are specific to certain use cases so I didn't want to include them with the general purpose packages
+
+### Mate desktop environment
+
+_These packages are specific to the Mate desktop environment_
+
+// TODO
+
+### Openbox desktop environment
+
+_These packages are specific to the Openbox desktop environment_
+
+- openbox
+- obconf
 - obkey (AUR)
-- aws-cli (AUR)
-- i3-gaps (AUR)
-- lemonbar-xft-git (AUR)
-- sqlcl (AUR)
-- ultra-flat-icons-blue (AUR)
-- gtk-theme-arc-git (AUR)
-- escrotum-git (AUR)
-- myrepos (AUR)
-- postman-bin (AUR)
-- spotify (AUR)
-- slack-desktop (AUR)
-- swagger-codegen (AUR)
