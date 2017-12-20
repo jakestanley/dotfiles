@@ -11,7 +11,8 @@
                 "@disable": false,
                 "args": [],
                 "exclude": [
-                    "SC2086"
+                    "SC2086",   // globbing and quotes warning
+                    "SC1117"    // backslash n treated as literal warning
                 ],
                 "excludes": []
             }

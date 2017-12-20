@@ -54,3 +54,4 @@ alias sf='screenfetch'
 
 # permissions, etc
 alias ugx='chmod ug+x'
+alias list='ls -l | grep --color=none -o "[^[:space:]]*$"'

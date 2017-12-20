@@ -57,3 +57,4 @@ poop = stash pop
 pullr = pull --rebase
 diffn = diff --ignore-space-at-eol
 
+amend = commit --amend
