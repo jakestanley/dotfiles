@@ -33,6 +33,7 @@ These packages are available in the official Arch Linux repositories
 - xorg-xkill
 - xorg-xfontsel
 - meld
+- wget
 - jq
 - tmux
 - trash-cli
@@ -47,12 +48,25 @@ These packages are available in the official Arch Linux repositories
 Run these commands as the root user.
 
 ```
-  useradd -m -s /bin/zsh jake
-  passwd jake
-  gpasswd -a jake docker
+useradd -m -s /bin/zsh jake
+passwd jake
+gpasswd -a jake docker
 ```
 
-## AUR
+## Python packages
+
+- 
+
+### Obtaining the Python package manager 'pip'
+
+I think I've set up python/pip incorrectly every time I've done it until now, so I'm going to try and document what I consider the _right_ way to do it. You should do this when logged in as your day to day user.
+
+- Download get-pip.py: `wget https://bootstrap.pypa.io/get-pip.py`
+- `python get-pip.py --user` (the user part is very important)
+- Use `python -m pip install -U <package> --user` to install/upgrade packages.
+- Add `$HOME/.local/bin` to your path variable
+
+## AUR packages
 
 - shellcheck (AUR)
 - obkey (AUR)
@@ -76,15 +90,15 @@ You need to install these packages the good old fashioned AUR way in order to us
 - yaourt [(AUR)](https://aur.archlinux.org/yaourt.git)
 
 ```
-  cd
-  mkdir tmp
-  cd tmp
-  git clone https://aur.archlinux.org/package-query.git
-  git clone https://aur.archlinux.org/yaourt.git
-  cd package-query
-  makepkg -si
-  cd ../yaourt
-  makepkg -si
+cd
+mkdir tmp
+cd tmp
+git clone https://aur.archlinux.org/package-query.git
+git clone https://aur.archlinux.org/yaourt.git
+cd package-query
+makepkg -si
+cd ../yaourt
+makepkg -si
 ```
 
 ## Third party packages
