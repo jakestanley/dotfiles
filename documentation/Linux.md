@@ -7,6 +7,7 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 - zsh
 - vim
 - jdk8-openjdk
+- openssh
 - xorg-xinit
 - xorg-server
 - git
