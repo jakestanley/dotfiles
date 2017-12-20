@@ -45,9 +45,11 @@ These packages are available in the official Arch Linux repositories
 
 Run these commands as the root user.
 
-`useradd -m -s /bin/zsh jake`
-`passwd jake`
-`gpasswd -a jake docker`
+```
+  useradd -m -s /bin/zsh jake
+  passwd jake
+  gpasswd -a jake docker
+```
 
 ## AUR
 
@@ -86,14 +88,14 @@ makepkg -s -i
 
 These packages are provided via third party repositories and can be installed and updated with `pacman` once the repository has been added to the `pacman` configuration.
 
-- sublime-text [repository](https://www.sublimetext.com/docs/3/linux_repositories.html#pacman)
+- sublime-text [(repository)](https://www.sublimetext.com/docs/3/linux_repositories.html#pacman)
 
 ## Manual installation
 
 Some software requires manual intervention. Fortunately this is a short list.
 
-- ohmyzsh [website](http://ohmyz.sh/)
-- fzf [github](https://github.com/junegunn/fzf/)
+- ohmyzsh [(website)](http://ohmyz.sh/)
+- fzf [(github)](https://github.com/junegunn/fzf/)
 
 ## Other
 
