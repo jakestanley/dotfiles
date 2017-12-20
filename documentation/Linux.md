@@ -17,7 +17,6 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 - pcmanfm
 - xscreensaver
 - ttf-ubuntu-font-family
-- feh
 - dunst
 - rofi
 - xorg-xsetroot
@@ -30,8 +29,6 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 - xorg-xfontsel
 - meld
 - jq
-- lightdm
-- lightdm-gtk-greeter
 - tmux
 - go
 - lxappearance
