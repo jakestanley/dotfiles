@@ -55,7 +55,9 @@ gpasswd -a jake docker
 
 ## Python packages
 
-- 
+- awscli
+- awsebcli
+- boto3
 
 ### Obtaining the Python package manager 'pip'
 
