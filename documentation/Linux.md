@@ -9,6 +9,7 @@ These packages are available in the official Arch Linux repositories
 - zsh
 - vim
 - jdk8-openjdk
+- rsync
 - docker _(install this before setting up users so you can add them to the docker group)_
 - openssh
 - xorg-xinit
@@ -69,19 +70,21 @@ Run these commands as the root user.
 
 ### Obtaining AUR packages
 
-You need to install these packages the good old fashioned AUR way in order to use Yaourt (front end for the AUR). You cannot run `makepkg` as the root user so you'll need to do this after creating your user account.
+You need to install these packages the good old fashioned AUR way in order to use Yaourt (front end for the AUR). You cannot run `makepkg` as the root user so you'll need to do this after creating your user account. As you won't be doing this as the root user, you'll need to make sure you've given yourself elevate permissions by using `visudo` as root.
 
 - package-query [(AUR)](https://aur.archlinux.org/package-query.git)
 - yaourt [(AUR)](https://aur.archlinux.org/yaourt.git)
 
 ```
-cd /tmp
-git clone https://aur.archlinux.org/package-query.git
-git clone https://aur.archlinux.org/yaourt.git
-cd package-query
-makepkg -s -i
-cd ../yaourt
-makepkg -s -i
+  cd
+  mkdir tmp
+  cd tmp
+  git clone https://aur.archlinux.org/package-query.git
+  git clone https://aur.archlinux.org/yaourt.git
+  cd package-query
+  makepkg -si
+  cd ../yaourt
+  makepkg -si
 ```
 
 ## Third party packages
