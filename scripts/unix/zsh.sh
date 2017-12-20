@@ -1,4 +1,10 @@
 # link or relink zsh dotfiles
+
+if [[ "${DOTFILES_REPO_DIR}" == "" ]]; then
+    echo "DOTFILES_REPO_DIR is not set. Exiting to stay safe"
+    exit 1
+fi
+
 rm -r ~/.aliases
 rm -r ~/.zshrc
 rm -r ~/.zshrc.d
