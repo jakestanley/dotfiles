@@ -33,10 +33,9 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 - lightdm
 - lightdm-gtk-greeter
 - tmux
-- golang
+- go
 - lxappearance
 - pandoc
-- golang
 - dconf-editor
 - clementine
 
