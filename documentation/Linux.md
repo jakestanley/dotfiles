@@ -13,7 +13,6 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 - xorg-server
 - git
 - ohmyzsh
-- obconf
 - terminator
 - openbox
 - i3status
@@ -42,7 +41,10 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 
 ### Openbox
 
-These packages are specific to the Openbox desktop environment
+_These packages are specific to the Openbox desktop environment_
+
+- openbox
+- obconf
 
 ## AUR
 
