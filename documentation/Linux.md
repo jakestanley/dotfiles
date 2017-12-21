@@ -24,6 +24,9 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 
 - zsh
 - vim
+- htop
+- xclip
+- tree
 - jdk8-openjdk
 - rsync
 - docker _(install this before setting up users so you can add them to the docker group)_
