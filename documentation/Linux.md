@@ -117,6 +117,12 @@ cd ../yaourt
 makepkg -si
 ```
 
+## Fonts
+
+Adding the `FONT` environment variable to `/etc/vconsole.conf` changes the console font. I am partial to these fonts:
+- ter-112n.psf.gz
+- ter-114b.psf.gz (for small or high DPI screens)
+
 ## Third party packages
 
 These packages are provided via third party repositories and can be installed and updated with `pacman` once the repository has been added to the `pacman` configuration.
