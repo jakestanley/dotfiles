@@ -6,18 +6,30 @@ My distro of choice for a while has been Arch Linux. The AUR makes it really eas
 
 These packages are available in the official Arch Linux repositories
 
+### Guest in VirtualBox
+
+Assuming you're using the Arch kernel, you'll need to install these packages first and enable relevant modules for VirtualBox guest support.
+
+- virtualbox-guest-modules-arch
+- virtualbox-guest-utils
+
+### Graphical user interface
+
+In my experience video drivers cause me the most issues so I'm putting the basic packages needed to get a GUI running here first. Pick a desktop environment from the `##Other` section. I recommend `openbox` for testing.
+
+- xorg-xinit
+- xorg-server
+
+### General purpose
+
 - zsh
 - vim
 - jdk8-openjdk
 - rsync
 - docker _(install this before setting up users so you can add them to the docker group)_
 - openssh
-- xorg-xinit
-- xorg-server
 - git
 - terminator
-- openbox
-- i3status
 - xdotool
 - pcmanfm
 - screenfetch
@@ -123,6 +135,10 @@ Some software requires manual intervention. Fortunately this is a short list.
 
 These packages are specific to certain use cases so I didn't want to include them with the general purpose packages
 
+### i3 desktop environment
+
+- i3status
+
 ### Mate desktop environment
 
 _These packages are specific to the Mate desktop environment_
@@ -136,3 +152,9 @@ _These packages are specific to the Openbox desktop environment_
 - openbox
 - obconf
 - obkey (AUR)
+
+## Troubleshooting
+
+### Issues with keys
+
+Your keyring may be out of date. Reinstalling the keyring with `pacman -S archlinux-keyring` should fix this issue.
