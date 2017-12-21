@@ -94,7 +94,7 @@ I think I've set up python/pip incorrectly every time I've done it until now, so
 - spotify (AUR)
 - slack-desktop (AUR)
 - spring-boot-cli (AUR)
-- shunit2
+- shunit2 (AUR)
 - swagger-codegen (AUR)
 - ddate (AUR)
 
@@ -117,7 +117,7 @@ cd ../yaourt
 makepkg -si
 ```
 
-## Fonts
+## Font configuration
 
 Adding the `FONT` environment variable to `/etc/vconsole.conf` changes the console font. I am partial to these fonts:
 - ter-112n.psf.gz
@@ -135,6 +135,8 @@ Some software requires manual intervention. Fortunately this is a short list.
 
 - ohmyzsh [(website)](http://ohmyz.sh/)
 - fzf [(github)](https://github.com/junegunn/fzf/)
+- fly
+- IntelliJ IDEA Ultimate Edition [(website)](https://www.jetbrains.com/idea/download/)
 
 ## Desktop environments
 
