@@ -20,6 +20,7 @@ These packages are available in the official Arch Linux repositories
 - i3status
 - xdotool
 - pcmanfm
+- screenfetch
 - xscreensaver
 - ttf-ubuntu-font-family
 - dunst
@@ -82,6 +83,8 @@ I think I've set up python/pip incorrectly every time I've done it until now, so
 - postman-bin (AUR)
 - spotify (AUR)
 - slack-desktop (AUR)
+- spring-boot-cli (AUR)
+- shunit2
 - swagger-codegen (AUR)
 
 ### Obtaining AUR packages
