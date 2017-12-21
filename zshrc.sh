@@ -3,8 +3,20 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# export DOTFILES_DIR
+if [[ "$DOTFILES_REPO_DIR" == "" ]]; then
+    export DOTFILES_REPO_DIR=$HOME/dotfiles
+fi
+
 # export user theme
-export THEME="base16-grayscale-light"
+if [[ "$THEME" == "" ]]; then
+    export THEME="base16-solarized-dark"
+fi
+
+# export wm if not set
+if [[ "$WM" == "" ]]; then
+    export WM=i3
+fi
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
