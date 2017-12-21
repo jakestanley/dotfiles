@@ -15,7 +15,7 @@ Assuming you're using the Arch kernel, you'll need to install these packages fir
 
 ### Graphical user interface
 
-In my experience video drivers cause me the most issues so I'm putting the basic packages needed to get a GUI running here first. Pick a desktop environment from the `##Other` section. I recommend `openbox` for testing.
+In my experience video drivers cause me the most issues so I'm putting the basic packages needed to get a GUI running here first. Pick a desktop environment for testing. I recommend `openbox`.
 
 - xorg-xinit
 - xorg-server
@@ -55,6 +55,7 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 - pandoc
 - dconf-editor
 - clementine
+- nethack
 
 ## Creating users
 
@@ -84,9 +85,6 @@ I think I've set up python/pip incorrectly every time I've done it until now, so
 ## AUR packages
 
 - shellcheck (AUR)
-- obkey (AUR)
-- aws-cli (AUR)
-- i3-gaps (AUR)
 - sqlcl (AUR)
 - ultra-flat-icons-blue (AUR)
 - gtk-theme-arc-git (AUR)
@@ -98,6 +96,7 @@ I think I've set up python/pip incorrectly every time I've done it until now, so
 - spring-boot-cli (AUR)
 - shunit2
 - swagger-codegen (AUR)
+- ddate (AUR)
 
 ### Obtaining AUR packages
 
@@ -131,13 +130,14 @@ Some software requires manual intervention. Fortunately this is a short list.
 - ohmyzsh [(website)](http://ohmyz.sh/)
 - fzf [(github)](https://github.com/junegunn/fzf/)
 
-## Other
+## Desktop environments
 
-These packages are specific to certain use cases so I didn't want to include them with the general purpose packages
+These packages are specific to certain use cases so I didn't want to include them with the general purpose packages.
 
 ### i3 desktop environment
 
 - i3status
+- i3-gaps (AUR)
 
 ### Mate desktop environment
 
