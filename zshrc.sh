@@ -105,7 +105,7 @@ $HOME/bin:\
 $HOME/.local/bin"
 
 export DOTFILES_REPO_DIR="${HOME}/dotfiles"
-export GOPATH="${HOME}/Code/Go"
+export GOPATH="${HOME}/go"
 
 if [ "$OS" = 'Darwin' ]; then
     export PATH="/Users/jake/Library/Android/sdk/platform-tools:$PATH"
