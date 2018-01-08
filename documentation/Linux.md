@@ -28,6 +28,7 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 - xclip
 - tree
 - jdk8-openjdk
+- maven
 - rsync
 - docker _(install this before setting up users so you can add them to the docker group)_
 - openssh
@@ -40,6 +41,7 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 - ttf-ubuntu-font-family
 - dunst
 - rofi
+- unzip
 - xorg-xsetroot
 - tk (dependency for gitk for some reason)
 - chromium
@@ -59,6 +61,12 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 - dconf-editor
 - clementine
 - nethack
+
+#### multilib
+
+this repository can be added by uncommenting the `[multilib]` section in `/etc/pacman.conf`
+
+- steam
 
 ## Creating users
 
@@ -100,6 +108,7 @@ I think I've set up python/pip incorrectly every time I've done it until now, so
 - shunit2 (AUR)
 - swagger-codegen (AUR)
 - ddate (AUR)
+- dropbox (AUR)
 
 ### Obtaining AUR packages
 
