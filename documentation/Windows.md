@@ -26,3 +26,6 @@ YMMV.
 - veracrypt
 - clementine
 - spotify
+- curl
+- gpu-z
+
