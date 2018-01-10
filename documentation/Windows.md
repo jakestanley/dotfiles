@@ -6,19 +6,18 @@ YMMV.
 
 ## Packages
 
+### Automated via Chocolatey
+
 - sublimetext3
 - git
 - vim
 - 1password
-- Lightshot (manual)
+- treesizefree
+- Lightshot
 - virtualbox
 - putty
-- Docker Toolbox (manual)
 - awscli
 - maven
-- Oracle JDK 8 (manual)
-- Oracle 11g (manual)
-- Oracle SQL Developer (manual)
 - Eclipse IDE for Java (manual)
 - golang
 - steam
@@ -29,3 +28,7 @@ YMMV.
 - curl
 - gpu-z
 
+### Manual
+- Oracle JDK 8
+- [partitionwizard](https://www.partitionwizard.com/)
+- Docker Toolbox
