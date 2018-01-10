@@ -18,7 +18,6 @@ YMMV.
 - putty
 - awscli
 - maven
-- Eclipse IDE for Java (manual)
 - golang
 - steam
 - winscp
@@ -32,3 +31,4 @@ YMMV.
 - Oracle JDK 8
 - [partitionwizard](https://www.partitionwizard.com/)
 - Docker Toolbox
+- Eclipse IDE for Java
