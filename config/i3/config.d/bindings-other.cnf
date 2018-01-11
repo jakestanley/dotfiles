@@ -1,7 +1,7 @@
 # rofi (launcher)
-bindsym $mod+d exec rofi -show run
-bindsym $mod+s exec rofi -show ssh
-bindsym $mod+a exec rofi -show window
+bindsym $mod+d exec rofi -dpi 144 -show run
+bindsym $mod+s exec rofi -dpi 144 -show ssh
+bindsym $mod+a exec rofi -dpi 144 -show window
 
 # dmenu (launcher)
 # bindsym $mod+d exec dmenu_run -b

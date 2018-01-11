@@ -1,4 +1,6 @@
-#!/bin/zsh
+#!/usr/bin/env bash
+
+xrandr --dpi 144
 
 # set the keyboard mappings
 ~/.xinitrc.d/setxkbmap.sh &
