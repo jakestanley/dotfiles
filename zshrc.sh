@@ -88,7 +88,7 @@ else
     additional_plugins="archlinux systemd"
 fi
 
-plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws spring gem \
+plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws spring gem git-flow \
          $additional_plugins)
 
 echo "Activating plugins: $plugins"
