@@ -61,6 +61,7 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 - dconf-editor
 - clementine
 - nethack
+- cmatrix
 
 #### multilib
 
@@ -95,20 +96,21 @@ I think I've set up python/pip incorrectly every time I've done it until now, so
 
 ## AUR packages
 
-- shellcheck (AUR)
-- sqlcl (AUR)
-- ultra-flat-icons-blue (AUR)
-- gtk-theme-arc-git (AUR)
-- escrotum-git (AUR)
-- myrepos (AUR)
-- postman-bin (AUR)
-- spotify (AUR)
-- slack-desktop (AUR)
-- spring-boot-cli (AUR)
-- shunit2 (AUR)
-- swagger-codegen (AUR)
-- ddate (AUR)
-- dropbox (AUR)
+- shellcheck
+- sqlcl
+- ultra-flat-icons-blue
+- gtk-theme-arc-git
+- gitflow-avh
+- escrotum-git
+- myrepos
+- postman-bin
+- spotify
+- slack-desktop
+- spring-boot-cli
+- shunit2
+- swagger-codegen
+- ddate
+- dropbox
 
 ### Obtaining AUR packages
 
