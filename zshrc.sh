@@ -110,7 +110,7 @@ export GOPATH="${HOME}/go"
 if [ "$OS" = 'Darwin' ]; then
     export PATH="/Users/jake/Library/Android/sdk/platform-tools:$PATH"
 else
-    export JAVA_HOME="${HOME}/opt/jdk"
+    export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
     # insert linux specific PATH stuff here
 fi
 export MANPATH="/usr/local/man:$MANPATH"
