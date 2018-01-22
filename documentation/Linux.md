@@ -62,6 +62,7 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 - clementine
 - nethack
 - cmatrix
+- nitrogen
 - compton
 
 #### multilib
