@@ -120,6 +120,7 @@ You need to install these packages the good old fashioned AUR way in order to us
 
 - package-query [(AUR)](https://aur.archlinux.org/package-query.git)
 - yaourt [(AUR)](https://aur.archlinux.org/yaourt.git)
+- sqlcl [(AUR)](https://aur.archlinux.org/sqlcl.git) - some assembly required
 
 ```
 cd
