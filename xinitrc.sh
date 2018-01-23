@@ -20,6 +20,11 @@ if which compton >/dev/null; then
     compton -b &
 fi
 
+# set wallpaper on login
+if which nitrogen >/dev/null; then
+    nitrogen --restore &
+fi
+
 # run builders. you could use checksums here to save some trivial cpu effort
 
 # dunst (if it's installed and that's your thing)
