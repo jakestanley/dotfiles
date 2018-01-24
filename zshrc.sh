@@ -4,8 +4,8 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # export DOTFILES_DIR
-if [[ "$DOTFILES_REPO_DIR" == "" ]]; then
-    export DOTFILES_REPO_DIR=$HOME/dotfiles
+if [[ "$DOTFILES" == "" ]]; then
+    export DOTFILES=$HOME/dotfiles
 fi
 
 # export user theme
@@ -105,7 +105,7 @@ $HOME/git/hermes/tools/bin:\
 $HOME/bin:\
 $HOME/.local/bin"
 
-export DOTFILES_REPO_DIR="${HOME}/dotfiles"
+export DOTFILES="${HOME}/dotfiles"
 export GOPATH="${HOME}/go"
 
 if [ "$OS" = 'Darwin' ]; then

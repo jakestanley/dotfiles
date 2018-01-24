@@ -9,7 +9,7 @@ alias maven='mvn'
 alias nginxerrors='\less +F /var/log/nginx/error.log'
 alias www='cd /var/www'
 alias fortunecow='watch -n 3600 "fortune -s | cowsay"'
-alias dots='cd $DOTFILES_REPO_DIR'
+alias dots='cd $DOTFILES'
 
 ## Make commands verbose by default
 ## Make cp recursive and verbose by default
