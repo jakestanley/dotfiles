@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # set directory
-export LBDIR=$DOTFILES_REPO_DIR/pilau/lemonbar
+export LBDIR=$DOTFILES/pilau/lemonbar
 
 # functions
 __get_dims() {

@@ -4,7 +4,7 @@
 ~/.xinitrc.d/setxkbmap.sh &
 
 # load the xrdb resources
-xrdb -DTHEME="<$DOTFILES_REPO_DIR/themes.d/xresources.d/${THEME}.Xresources>" -load ~/.Xresources
+xrdb -DTHEME="<$DOTFILES/themes.d/xresources.d/${THEME}.Xresources>" -load ~/.Xresources
 
 # set up monitors configuration
 ~/.xinitrc.d/monitors.sh &
@@ -16,6 +16,11 @@ fi
 # compton (if it's installed and that's your thing)
 if which compton >/dev/null; then
     compton -b &
+fi
+
+# set wallpaper on login
+if which nitrogen >/dev/null; then
+    nitrogen --restore &
 fi
 
 # run builders. you could use checksums here to save some trivial cpu effort

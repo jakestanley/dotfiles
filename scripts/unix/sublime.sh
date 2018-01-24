@@ -16,9 +16,9 @@ fi
 
 echo "sublime dir..."
 echo $SUBLIME_DIR
-echo $DOTFILES_REPO_DIR
+echo $DOTFILES
 
 mkdir -p "$SUBLIME_DIR/Packages"
 rm -rf   "$SUBLIME_DIR/Packages/User"
-ln -s    "$DOTFILES_REPO_DIR/config/sublime-text-3/Packages/User" \
+ln -s    "$DOTFILES/config/sublime-text-3/Packages/User" \
          "$SUBLIME_DIR/Packages/User"

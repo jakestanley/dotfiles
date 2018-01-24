@@ -4,8 +4,8 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # export DOTFILES_DIR
-if [[ "$DOTFILES_REPO_DIR" == "" ]]; then
-    export DOTFILES_REPO_DIR=$HOME/dotfiles
+if [[ "$DOTFILES" == "" ]]; then
+    export DOTFILES=$HOME/dotfiles
 fi
 
 # export user theme
@@ -88,7 +88,8 @@ else
     additional_plugins="archlinux systemd"
 fi
 
-plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws spring gem \
+plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws \
+         spring gem git-flow fly \
          $additional_plugins)
 
 echo "Activating plugins: $plugins"
@@ -104,13 +105,13 @@ $HOME/git/hermes/tools/bin:\
 $HOME/bin:\
 $HOME/.local/bin"
 
-export DOTFILES_REPO_DIR="${HOME}/dotfiles"
-export GOPATH="${HOME}/Code/Go"
+export DOTFILES="${HOME}/dotfiles"
+export GOPATH="${HOME}/go"
 
 if [ "$OS" = 'Darwin' ]; then
     export PATH="/Users/jake/Library/Android/sdk/platform-tools:$PATH"
 else
-    export JAVA_HOME="${HOME}/opt/jdk"
+    export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
     # insert linux specific PATH stuff here
 fi
 export MANPATH="/usr/local/man:$MANPATH"

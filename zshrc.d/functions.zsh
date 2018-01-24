@@ -24,3 +24,35 @@ function gitignore() {
     echo -e "*sublime-*" >> ./.gitignore
 }
 
+# create a new sublime project for this directory (or argument) or open 
+# a project if one exists there
+function stn() {
+
+    local target=$1
+
+    if [[ "${target}" == "" ]]; then
+        target=$(pwd);
+    elif [[ ! -d ${target} ]]; then
+        echo "${target} is not a valid directory"
+        return 1
+    fi
+
+    local sublime_project_file=$target/$(basename $target).sublime-project
+
+    if [[ ! -f $sublime_project_file ]]; then
+        
+        touch $sublime_project_file
+
+        echo -e "{"                         >> $sublime_project_file
+        echo -e "\t\"folders\":"            >> $sublime_project_file
+        echo -e "\t\t[{"                    >> $sublime_project_file
+        echo -e "\t\t\t\"path\": \".\","    >> $sublime_project_file
+        echo -e "\t\t\t\"file_exclude_patterns\": []" >> $sublime_project_file
+        echo -e "\t\t}]"                    >> $sublime_project_file
+        echo -e "}"                         >> $sublime_project_file
+
+        echo -e "New Sublime Text project created:\n\t${sublime_project_file}"
+
+    fi
+}
+
