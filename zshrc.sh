@@ -117,7 +117,9 @@ fi
 export MANPATH="/usr/local/man:$MANPATH"
 
 # run the oh-my-zsh shell startup script
-source $ZSH/oh-my-zsh.sh
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+	source $ZSH/oh-my-zsh.sh
+fi
 
 # alt+arrows navigation
 bindkey '[C' forward-word
