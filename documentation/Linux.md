@@ -64,6 +64,7 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 - cmatrix
 - nitrogen
 - compton
+- base-devel (for development, not installed by default in Manjaro Linux)
 
 #### multilib
 
