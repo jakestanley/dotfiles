@@ -6,7 +6,7 @@ xrandr --dpi 144
 ~/.xinitrc.d/setxkbmap.sh &
 
 # load the xrdb resources
-xrdb -DTHEME="<$DOTFILES_REPO_DIR/themes.d/xresources.d/${THEME}.Xresources>" -load ~/.Xresources
+xrdb -DTHEME="<$DOTFILES/themes.d/xresources.d/${THEME}.Xresources>" -load ~/.Xresources
 
 # set up monitors configuration
 ~/.xinitrc.d/monitors.sh &
