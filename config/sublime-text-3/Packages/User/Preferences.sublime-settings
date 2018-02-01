@@ -41,12 +41,9 @@
 		"ace",
 		".mvn"
 	],
-	"font_face": "Ubuntu Mono",
 	"font_options":
 	[
-		"no_antialias"
 	],
-	"font_size": 10,
 	"ignored_packages":
 	[
 		"Vintage"
