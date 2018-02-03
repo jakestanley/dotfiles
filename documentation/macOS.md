@@ -9,4 +9,5 @@
 ### Brew Cask
 
 - github
+- caffeine
 
