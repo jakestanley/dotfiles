@@ -109,7 +109,8 @@ export DOTFILES="${HOME}/dotfiles"
 export GOPATH="${HOME}/go"
 
 if [ "$OS" = 'Darwin' ]; then
-    export PATH="/Users/jake/Library/Android/sdk/platform-tools:$PATH"
+    export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+    export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 else
     export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
     # insert linux specific PATH stuff here
