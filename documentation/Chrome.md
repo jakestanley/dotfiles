@@ -11,6 +11,9 @@ Don't sync history and open tabs on a work machine!
 - Privacy Badger
 - Vimium
 - uBlock Origin
+- Save to Pocket
+- Read Mode
+- Empty New Tab Page
 
 ### Work
 - Lastpass
