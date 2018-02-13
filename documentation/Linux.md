@@ -33,6 +33,7 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 - docker _(install this before setting up users so you can add them to the docker group)_
 - openssh
 - git
+- subversion
 - terminator
 - xdotool
 - pcmanfm
@@ -64,6 +65,8 @@ In my experience video drivers cause me the most issues so I'm putting the basic
 - cmatrix
 - nitrogen
 - compton
+- fdupes
+- base-devel (for development, not installed by default in Manjaro Linux)
 
 #### multilib
 

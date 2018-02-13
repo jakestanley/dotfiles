@@ -67,6 +67,9 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i
 # exit i3 (and x session with no nag bar)
 bindsym $mod+Escape exec --no-startup-id i3-exit
 
+# screenshot
+bindsym Print exec --no-startup-id escrotum -s -C
+
 # lock the screen
 bindsym $mod+Shift+l exec i3lock
 
