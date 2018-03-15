@@ -76,7 +76,14 @@ HIST_REDUCE_BLANKS="true"
 
 OS=`uname -s`
 echo ""
-echo "Detected environment: $OS"
+SPLASH="Detected environment: $OS."
+
+ARCHITECTURE=`uname -m`
+if [[ "${ARCHITECTURE}" == "arm"* ]]; then
+	SPLASH="${SPLASH} ARM architecture detected"
+fi
+
+echo $SPLASH
 
 if [ "$OS" = 'Darwin' ]; then
     additional_plugins="osx brew brew-cask"
