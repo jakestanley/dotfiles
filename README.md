@@ -5,10 +5,6 @@ my configuration files. i've needed to sanitise them and sort them out for a whi
 
 I've been getting better at using Linux over the last two years and with that I want to clean things up. There's some Windows, macOS and FreeBSD (WIP) stuff in here too.
 
-## Installing Packages
+# Configuring environments
 
-Unless specified in parentheses, use the appropriate package manager for each operating system to install these packages.
-
-# Environments
-
-Please see [the documentation folder](documentation) for more information on each environment.
+Please see [the wiki](https://github.com/madstanners/dotfiles/wiki) for more information on each environment. I used to store the documentation in the repository as markdown files, but it just became a pain so I decided to use a wiki.

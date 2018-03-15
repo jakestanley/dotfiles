@@ -22,6 +22,9 @@ function gitignore() {
 
     echo -e "# Sublime Text" >> ./.gitignore
     echo -e "*sublime-*" >> ./.gitignore
+
+    echo -e "# Vim" >> ./.gitignore
+    echo -e "*.swp" >> ./.gitignore
 }
 
 # create a new sublime project for this directory (or argument) or open 

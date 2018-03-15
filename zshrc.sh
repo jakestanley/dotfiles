@@ -96,7 +96,7 @@ else
 fi
 
 plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws \
-         spring gem git-flow fly \
+         spring gem git-flow fly nvm pip npm \
          $additional_plugins)
 
 echo "Activating plugins: $plugins"
@@ -116,7 +116,8 @@ export DOTFILES="${HOME}/dotfiles"
 export GOPATH="${HOME}/go"
 
 if [ "$OS" = 'Darwin' ]; then
-    export PATH="/Users/jake/Library/Android/sdk/platform-tools:$PATH"
+    export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+    export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 else
     export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
     # insert linux specific PATH stuff here
@@ -172,3 +173,7 @@ source ~/.zshrc.d/work.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 setopt hist_ignorealldups
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
