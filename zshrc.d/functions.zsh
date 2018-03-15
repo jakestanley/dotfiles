@@ -2,7 +2,10 @@
 
 # docker ssh. requires docker and jq
 function docker_ssh() {
-    ssh root@$(docker inspect $1 | jq '.[0].NetworkSettings.Networks.bridge.IPAddress' --raw-output);
+    if [[ "$2" != "" ]]; then
+	    PORT_EXT="-p $2"
+    fi
+    ssh root@$(docker inspect $1 | jq '.[0].NetworkSettings.Networks.bridge.IPAddress' --raw-output) ${PORT_EXT};
 }
 
 # bash from within a docker instance. just pass the docker image name. very basic

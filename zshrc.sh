@@ -76,7 +76,16 @@ HIST_REDUCE_BLANKS="true"
 
 OS=`uname -s`
 echo ""
-echo "Detected environment: $OS"
+SPLASH="Detected environment: $OS."
+
+ARCHITECTURE=`uname -m`
+if [[ "${ARCHITECTURE}" == "arm"* ]]; then
+	SPLASH="${SPLASH} ARM architecture detected"
+fi
+
+echo $SPLASH
+
+core_plugins="git screen tmux docker pip"
 
 if [ "$OS" = 'Darwin' ]; then
     additional_plugins="osx brew brew-cask"
@@ -88,9 +97,13 @@ else
     additional_plugins="archlinux systemd"
 fi
 
-plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws \
-         spring gem git-flow fly nvm pip npm \
+if [[ "$ARCHITECTURE" = "arm"* ]]; then
+    plugins=($core_plugins)
+else
+    plugins=($core_plugins battery vagrant svn sublime rsync mvn ng aws \
+         spring gem git-flow fly nvm npm \
          $additional_plugins)
+fi
 
 echo "Activating plugins: $plugins"
 echo ""
@@ -118,7 +131,9 @@ fi
 export MANPATH="/usr/local/man:$MANPATH"
 
 # run the oh-my-zsh shell startup script
-source $ZSH/oh-my-zsh.sh
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+	source $ZSH/oh-my-zsh.sh
+fi
 
 # alt+arrows navigation
 bindkey '[C' forward-word
