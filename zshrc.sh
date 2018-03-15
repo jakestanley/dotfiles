@@ -85,6 +85,8 @@ fi
 
 echo $SPLASH
 
+core_plugins="git screen tmux docker pip"
+
 if [ "$OS" = 'Darwin' ]; then
     additional_plugins="osx brew brew-cask"
 elif [ "$OS" = 'FreeBSD' ]; then
@@ -95,9 +97,13 @@ else
     additional_plugins="archlinux systemd"
 fi
 
-plugins=(git battery vagrant svn sublime screen rsync mvn docker ng aws \
-         spring gem git-flow fly nvm pip npm \
+if [[ "$ARCHITECTURE" = "arm"* ]]; then
+    plugins=($core_plugins)
+else
+    plugins=($core_plugins battery vagrant svn sublime rsync mvn ng aws \
+         spring gem git-flow fly nvm npm \
          $additional_plugins)
+fi
 
 echo "Activating plugins: $plugins"
 echo ""
