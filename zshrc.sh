@@ -132,7 +132,8 @@ $HOME/opt/jdk/jre/bin:/usr/bin/core_perl:\
 $HOME/.pilau/lemonbar:$HOME/opt/sqldeveloper:\
 $HOME/git/hermes/tools/bin:\
 $HOME/bin:\
-$HOME/.local/bin"
+$HOME/.local/bin:\
+$HOME/.npm/.bin"
 
 export DOTFILES="${HOME}/dotfiles"
 export GOPATH="${HOME}/go"
