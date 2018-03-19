@@ -69,21 +69,21 @@ HIST_REDUCE_BLANKS="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-
 OS=`uname -s`
 echo ""
 SPLASH="Detected environment: $OS."
 
 ARCHITECTURE=`uname -m`
 if [[ "${ARCHITECTURE}" == "arm"* ]]; then
-	SPLASH="${SPLASH} ARM architecture detected"
+    SPLASH="${SPLASH} ARM architecture detected"
 fi
 
 echo $SPLASH
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
 
 core_plugins="git screen tmux docker pip"
 
@@ -100,9 +100,25 @@ fi
 if [[ "$ARCHITECTURE" = "arm"* ]]; then
     plugins=($core_plugins)
 else
-    plugins=($core_plugins battery vagrant svn sublime rsync mvn ng aws \
-         spring gem git-flow fly nvm npm \
-         $additional_plugins)
+    plugins=(\
+        $core_plugins \
+        battery \
+        vagrant \
+        svn \
+        sublime \
+        rsync \
+        mvn \
+        ng \
+        aws \
+        spring \
+        gem \
+        git-flow \
+        fly \
+        nvm \
+        npm \
+        docker-compose \
+        $additional_plugins \
+    )
 fi
 
 echo "Activating plugins: $plugins"
