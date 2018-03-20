@@ -21,9 +21,8 @@ bindsym $mod+t exec subl
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# notifications
-bindsym $mod+p          exec notify-send "suppressing notifications" -t 2       && sleep 4 && pkill -u "$USER" -USR1 dunst
-bindsym $mod+Shift+p    exec pkill -u "$USER" -USR2 dunst                       && notify-send "resuming notifications" -t 2
+# clipboard management with clipmenu
+bindsym $mod+p exec clipmenu
 
 # volume controls
 bindsym $mod+Shift+c exec amixer -D pulse set Master 5%+  unmute

@@ -9,6 +9,10 @@ xrdb -DTHEME="<$DOTFILES/themes.d/xresources.d/${THEME}.Xresources>" -load ~/.Xr
 # set up monitors configuration
 ~/.xinitrc.d/monitors.sh &
 
+if which clipmenud >/dev/null; then
+    clipmenud &
+fi
+
 if which VBoxClient-all >/dev/null; then
     VBoxClient-all &
 fi

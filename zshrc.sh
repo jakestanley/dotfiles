@@ -125,6 +125,7 @@ echo "Activating plugins: $plugins"
 echo ""
 
 # User configuration
+export CM_LAUNCHER=rofi
 export VISUAL="vim"
 export SVN_EDITOR="vim"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/go/bin:\
