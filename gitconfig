@@ -51,7 +51,7 @@ s = status
 dt = difftool
 mt = mergetool
 
-eat = stash
+eat = stash --include-untracked
 poop = stash pop
 
 pullr = pull --rebase
