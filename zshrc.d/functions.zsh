@@ -13,6 +13,11 @@ function docker_bash() {
     docker run -it --entrypoint /bin/bash $1
 }
 
+# gets container name and image of all running instances
+function derps() {
+    watch "docker ps --format \"{{.Names}}: {{.Image}}\""
+}
+
 function gitignore() {
 
     echo "Generating a .gitignore file in the current directory."
