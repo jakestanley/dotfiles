@@ -1,5 +1,11 @@
 #!/bin/sh
-rm ~/.config/i3/config
+I3_CONFIG_PATH=$HOME/.config/i3/config
+
+rm $I3_CONFIG_PATH
+
+# variables
+echo "set \$theme ${THEME}" >> $I3_CONFIG_PATH
+
 cat \
     ~/.config/i3/config.d/top.cnf \
     ~/.config/i3/config.d/defaults.cnf \
@@ -13,4 +19,4 @@ cat \
     ~/.config/i3/config.d/keys.cnf \
     ~/.config/i3/config.d/mode-resize.cnf \
     ~/.config/i3/config.d/bottom.cnf \
->> ~/.config/i3/config
+>> $I3_CONFIG_PATH

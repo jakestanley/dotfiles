@@ -57,3 +57,4 @@ alias sf='screenfetch'
 alias ugx='chmod ug+x'
 alias list='ls -l | grep --color=none -o "[^[:space:]]*$"'
 alias gr='git_root'
+

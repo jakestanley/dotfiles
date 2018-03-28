@@ -7,7 +7,7 @@ bindsym $mod+a exec rofi -show window
 # bindsym $mod+d exec dmenu_run -b
 
 # start a terminal
-bindsym $mod+Return exec $default_terminal
+bindsym $mod+Return exec terminator --profile=$theme
 
 # start a browser window
 bindsym $mod+b exec chromium-browser
