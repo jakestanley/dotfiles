@@ -13,6 +13,10 @@ function docker_bash() {
     docker run -it --entrypoint /bin/bash $1
 }
 
+function git_root() {
+    cd $(git rev-parse --show-toplevel)
+}
+
 # gets container name and image of all running instances
 function derps() {
     watch "docker ps --format \"{{.Names}}: {{.Image}}\""
