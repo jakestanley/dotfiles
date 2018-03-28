@@ -1,6 +1,7 @@
 # Basic bar configuration using the Base16 variables.
 bar {
-    status_command i3status -c ~/.config/i3/i3status.conf
+    # status_command i3status -c ~/.config/i3/i3status.conf
+    status_command i3blocks -c ~/.config/i3/i3blocks.conf
     position top
 
     colors {
