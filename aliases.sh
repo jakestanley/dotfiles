@@ -50,6 +50,7 @@ alias destroy='rm -rf'
 
 alias cf='aws cloudformation --region eu-west-1'
 alias dicker='docker'
+alias dc='docker-compose'
 alias df='df -T'
 alias sf='screenfetch'
 
