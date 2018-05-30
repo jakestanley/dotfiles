@@ -1,34 +1,38 @@
 # workspaces
 
-set $tag1 "1: term"
-set $tag2 "2: java"
-set $tag3 "3: text"
-set $tag4 "4: git"
-set $tag5 "5: aws"
-set $tag6 "6: web"
-set $tag7 "7: databases"
-set $tag8 "8: music"
-set $tag9 "9: slack"
-set $tag10 "10: misc"
-set $tag11 "####"
+set $ws1 "1: term"
+set $ws2 "2: java"
+set $ws3 "3: text"
+set $ws4 "4: git"
+set $ws5 "5: aws"
+set $ws6 "6: web"
+set $ws7 "7: databases"
+set $ws8 "8: music"
+set $ws9 "9: slack"
+set $ws10 "10: misc"
+set $ws11 "####"
 
 # assignments
-assign [class="Eclipse$"] $tag2
-assign [class="EclipseTrader"] $tag10
-assign [class="eclipsetrader"] $tag10
-assign [class="subl"] $tag3
-assign [class="subl3"] $tag3
-assign [class="Subl3"] $tag3
-assign [class="chromium-browser"] $tag6
-assign [class="chromium"] $tag6
-assign [class="Chromium"] $tag6
-assign [class="gitg"] $tag4
-assign [class="spotify"] $tag8
-assign [class="Spotify"] $tag8
-assign [class="Slack"] $tag9
-assign [class="Mail"] $tag9
-assign [class="mysql-workbench-bin"] $tag7
-assign [class="sun-awt-X11-XFramePeer"] $tag7
+assign [class="jetbrains-idea"] $ws2
+assign [class="Eclipse$"] $ws2
+assign [class="EclipseTrader"] $ws10
+assign [class="eclipsetrader"] $ws10
+assign [class="sublime_text"] $ws3
+assign [class="meld"] $ws4
+assign [class="Meld"] $ws4
+assign [class="chromium$"] $ws6
+assign [class="Chromium$"] $ws6
+assign [class="gitg"] $ws4
+assign [class="Gitg"] $ws4
+assign [class="spotify"] $ws8
+assign [class="Spotify"] $ws8
+assign [class="Slack"] $ws9
+assign [class="Mail"] $ws9
+
+# databases
+assign [title="^Oracle SQL Developer .*"] $ws7
+assign [class="mysql-workbench-bin"] $ws7
+assign [class="sun-awt-X11-XFramePeer"] $ws7
 
 # # i3-gaps
 
@@ -40,5 +44,5 @@ assign [class="sun-awt-X11-XFramePeer"] $tag7
 # gaps outer $default_gaps_outer
 
 # # override global gaps individually
-# workspace $tag3 gaps outer 0
-# workspace $tag3 gaps inner 0
+# workspace $ws3 gaps outer 0
+# workspace $ws3 gaps inner 0

@@ -1,2 +1,5 @@
+# Floating window exceptions
+for_window [class="Chromium-browser"]  floating enable
+
 # Fixing the graphics glitch
 for_window [class="^.*"] border pixel 3
