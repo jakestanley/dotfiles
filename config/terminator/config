@@ -50,3 +50,28 @@
     use_system_font = False
     background_type = transparent
 
+  [[base16-solarized-light]]
+    background_color = "#fdf6e3"
+    background_darkness = 0.9
+    cursor_color = "#586e75"
+    foreground_color = "#586e75"
+    palette = "#002b36:#dc322f:#859900:#b58900:#268bd2:#6c71c4:#2aa198:#93a1a1:#657b83:#dc322f:#859900:#b58900:#268bd2:#6c71c4:#2aa198:#fdf6e3"
+
+    font = Ubuntu Mono 11
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+    background_type = transparent
+
+  [[base16-solarized-dark]]
+    background_color = "#002b36"
+    background_darkness = 0.9
+    cursor_color = "#93a1a1"
+    foreground_color = "#93a1a1"
+    palette = "#002b36:#dc322f:#859900:#b58900:#268bd2:#6c71c4:#2aa198:#93a1a1:#657b83:#dc322f:#859900:#b58900:#268bd2:#6c71c4:#2aa198:#fdf6e3"
+
+    font = Ubuntu Mono 11
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+    background_type = transparent
