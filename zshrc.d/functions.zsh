@@ -39,6 +39,10 @@ function gitignore() {
     echo -e "*.swp" >> ./.gitignore
 }
 
+function pip_install() {
+    python -m pip install -U $1 --user
+}
+
 # create a new sublime project for this directory (or argument) or open 
 # a project if one exists there
 function stn() {
