@@ -39,7 +39,8 @@
 		"example",
 		".git",
 		"ace",
-		".mvn"
+		".mvn",
+		"target/test-classes"
 	],
 	"font_face": "Ubuntu Mono",
 	"font_options":
