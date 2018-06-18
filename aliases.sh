@@ -60,3 +60,5 @@ alias list='ls -l | grep --color=none -o "[^[:space:]]*$"'
 alias gr='git_root'
 alias fetch='git fetch --all'
 
+# youtube-dl
+alias youtube-dla='youtube-dl --extract-audio --audio-format mp3'
