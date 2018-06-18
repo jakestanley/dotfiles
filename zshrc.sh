@@ -102,17 +102,11 @@ if [[ "$ARCHITECTURE" = "arm"* ]]; then
 else
     plugins=(\
         $core_plugins \
-        battery \
-        vagrant \
-        svn \
         sublime \
         rsync \
         mvn \
         ng \
         aws \
-        spring \
-        gem \
-        git-flow \
         fly \
         nvm \
         npm \
