@@ -5,8 +5,8 @@ if [[ "${DOTFILES}" == "" ]]; then
     exit 1
 fi
 
-rm -r ~/.gitconfig
-rm -r ~/.gitignore_global
+rm -f ~/.gitconfig
+rm -f ~/.gitignore_global
 
 ln -s $DOTFILES/gitconfig ~/.gitconfig
 ln -s $DOTFILES/gitignore_global ~/.gitignore_global

@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # link or relink zsh dotfiles
 
 if [[ "${DOTFILES}" == "" ]]; then
@@ -5,9 +6,9 @@ if [[ "${DOTFILES}" == "" ]]; then
     exit 1
 fi
 
-rm -rf ~/.aliases
-rm -rf ~/.zprofile
-rm -rf ~/.zshrc
+rm -f ~/.aliases
+rm -f ~/.zprofile
+rm -f ~/.zshrc
 rm -rf ~/.zshrc.d
 
 ln -s $DOTFILES/aliases.sh ~/.aliases
