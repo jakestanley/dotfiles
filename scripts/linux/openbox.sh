@@ -1,3 +1,3 @@
 # link or relink openbox
-rm -r ~/.config/openbox
+rm -rf ~/.config/openbox
 ln -s $DOTFILES/config/openbox ~/.config/openbox
