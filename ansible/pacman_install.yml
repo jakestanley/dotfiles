@@ -7,8 +7,60 @@
       pacman:
         name:
           - zsh
-          - base-devel
+          - vim
+          - htop
+          - tree
+          - screenfetch
+          - rsync
+          - git
+          - openssh
+          - unzip
+          - tmux
+          - screen
+          - trash-cli
           - jq
-          - figlet
+          - curl
+          - wget
+          - base-devel
+          # for funsies
           - nethack
-      state: latest
+          - figlet
+        state: latest
+    - name: install development tools
+      pacman:
+        name:
+          - tk
+          - jdk8-openjdk
+          - docker
+        state: latest
+    - name: install base gui packages
+      pacman:
+        name:
+          - xorg-xinit
+          - xorg-server
+          - xorg-xsetroot
+          - libglvnd
+          - virtualbox-guest-modules-arch
+          - virtualbox-guest-utils
+        state: latest
+    - name: install desktop environment
+      pacman:
+        name:
+          - i3-gaps
+          - chromium
+          - compton
+          - xclip
+          - xdotool
+          - terminator
+          - rofi
+          - dunst
+          - ttf-ubuntu-font-family
+          - noto-fonts
+          - nitrogen
+        state: latest
+    - name: install gui development tools
+      pacman:
+        name:
+          - meld
+          - gitg
+        state: latest
