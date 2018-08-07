@@ -5,9 +5,10 @@
   tasks:
     - name: install command line tools
       pacman:
-        - zsh
-        - base-devel
-        - jq
-        - figlet
-        - nethack
+        name:
+          - zsh
+          - base-devel
+          - jq
+          - figlet
+          - nethack
       state: latest
