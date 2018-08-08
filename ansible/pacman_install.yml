@@ -40,7 +40,6 @@
           - xorg-server
           - xorg-xsetroot
           - libglvnd
-          - virtualbox-guest-modules-arch
           - virtualbox-guest-utils
         state: latest
     - name: install desktop environment
