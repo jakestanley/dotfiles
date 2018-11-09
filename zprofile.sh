@@ -1,1 +1,2 @@
-test -f ~/.profile && emulator sh -c ~/.profile
+[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
+
