@@ -5,6 +5,7 @@ if [[ "${DOTFILES}" == "" ]]; then
     exit 1
 fi
 
+test -f ~/.tmux.conf && \
 rm -rf ~/.tmux.conf
 
 ln -s $DOTFILES/tmux.conf ~/.tmux.conf

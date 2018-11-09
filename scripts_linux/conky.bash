@@ -5,5 +5,7 @@ if [[ "${DOTFILES}" == "" ]]; then
     exit 1
 fi
 
-rm -f ~/.conkyrc
+test -f ~/.conkyrc && \
+rm ~/.conkyrc
+
 ln -s $DOTFILES/conkyrc ~/.conkyrc

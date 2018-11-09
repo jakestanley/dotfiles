@@ -1,15 +1,21 @@
 #!/usr/bin/env zsh
-# link or relink zsh dotfiles
 
 if [[ "${DOTFILES}" == "" ]]; then
     echo "DOTFILES is not set. Exiting to stay safe"
     exit 1
 fi
 
-rm -f ~/.aliases
-rm -f ~/.zprofile
-rm -f ~/.zshrc
-rm -rf ~/.zshrc.d
+test -f ~/.aliases && \
+rm ~/.aliases
+
+test -f ~/.zprofile && \
+rm ~/.zprofile
+
+test -f ~/.zshrc && \
+rm ~/.zshrc
+
+test -d ~/.zshrc.d && \
+rm -r ~/.zshrc.d
 
 ln -s $DOTFILES/aliases.sh ~/.aliases
 ln -s $DOTFILES/zprofile.sh ~/.zprofile

@@ -1,9 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-# link or relink sublime text 3 config
+if [[ "${DOTFILES}" == "" ]]; then
+    echo "DOTFILES is not set. Exiting to stay safe"
+    exit 1
+fi
 
-OS=`uname -s`
-echo $OS
+OS=$(uname -s)
 
 if [ "$OS" == 'Darwin' ]; then
     SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 3"
