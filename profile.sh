@@ -16,7 +16,22 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-export PATH="$HOME/bin:$PATH"
+export PATH=$PATH:/bin
+export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/sbin
+export PATH=$PATH:/usr/bin
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/bin/core_perl
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/opt/jdk/jre/bin
+export PATH=$PATH:$HOME/.local/bin:
+export PATH=$PATH:$HOME/.npm/.bin:
+export PATH=$PATH:$HOME/.pilau/lemonbar:
 
+export DOTFILES=$HOME/git/github.com/madstanners/dotfiles
 
-
+export VISUAL="vim"
+export SVN_EDITOR="vim"
+export GOPATH="${HOME}/go"
+export NVM_DIR="$HOME/.nvm"
