@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # link or relink sublime text 3 config
 
-OS=`uname -s`
+OS="$(uname -s)"
 echo $OS
 
 if [ "$OS" == 'Darwin' ]; then

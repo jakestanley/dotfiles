@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # set directory
 export LBDIR=$DOTFILES/pilau/lemonbar

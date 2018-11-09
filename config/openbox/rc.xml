@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Clearlooks</name>
+    <name>Nightmare-02</name>
     <titleLayout>NDLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -118,7 +118,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>1</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>(Unnamed desktop)</name>
@@ -148,13 +148,13 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>0</top>
+    <top>40</top>
     <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
+    <left>256</left>
+    <right>256</right>
   </margins>
   <dock>
-    <position>TopLeft</position>
+    <position>TopRight</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
@@ -188,7 +188,7 @@
     </keybind>
     <keybind key="W-KP_Multiply">
       <action name="Execute">
-        <command>xdotool type &quot;SELECT * FROM &quot;</command>
+        <command>xdotool type "SELECT * FROM "</command>
       </action>
     </keybind>
     <keybind key="W-grave">

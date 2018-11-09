@@ -21,6 +21,7 @@
           - jq
           - curl
           - wget
+          - ncdu
           - base-devel
           # for funsies
           - nethack
