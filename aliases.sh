@@ -4,6 +4,7 @@ alias mysqldump='mysqldump --defaults-extra-file=~/.mycredentials.cnf'
 alias got='git'
 alias gitc='git-cola'
 alias maven='mvn'
+alias mcv='mvn clean verify'
 
 ## Miscellaneous
 alias nginxerrors='\less +F /var/log/nginx/error.log'
