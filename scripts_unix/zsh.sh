@@ -5,8 +5,14 @@ if [[ "${DOTFILES}" == "" ]]; then
     exit 1
 fi
 
+DATE=$(date '+%Y-%m-%dT%H%M%S')
+mkdir -p ~/backups
+
 test -f ~/.aliases && \
 rm ~/.aliases
+
+test -f ~/.profile && \
+mv ~/.profile ~/backups/.profile_$DATE
 
 test -f ~/.zprofile && \
 rm ~/.zprofile
@@ -18,6 +24,7 @@ test -d ~/.zshrc.d && \
 rm -r ~/.zshrc.d
 
 ln -s $DOTFILES/aliases.sh ~/.aliases
+ln -s $DOTFILES/profile.sh ~/.profile
 ln -s $DOTFILES/zprofile.sh ~/.zprofile
 ln -s $DOTFILES/zshrc.sh ~/.zshrc
 ln -s $DOTFILES/zshrc.d ~/.zshrc.d
