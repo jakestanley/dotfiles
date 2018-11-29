@@ -2,6 +2,7 @@
     editor = vim
     whitespace = trailing-space,space-before-tab,indent-with-non-tab
 	excludesfile = /Users/jake/.gitignore_global
+	autocrlf = true
 
 [user]
     name = Jake Stanley
