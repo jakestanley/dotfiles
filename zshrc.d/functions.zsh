@@ -75,3 +75,24 @@ function stn() {
     fi
 }
 
+# adapted from: https://dhoeric.github.io/2017/https-to-ssh-in-gitmodules
+function git_origin_to_https() {
+    OLD_URL=$(git remote get-url origin)
+    if [[ $(echo $OLD_URL | grep -c ^https) == 1 ]]; then
+        echo "origin is already pointing to https: '$OLD_URL'";
+        return;
+    fi
+    NEW_URL=$(echo $OLD_URL | perl -p -e 's|git@(.*?):|https://\1/|g')
+    git remote set-url origin $NEW_URL
+}
+
+# adapted from: https://dhoeric.github.io/2017/https-to-ssh-in-gitmodules
+function git_origin_to_ssh() {
+    OLD_URL=$(git remote get-url origin)
+    if [[ $(echo $OLD_URL | grep -c ^https) == 0 ]]; then
+        echo "origin does not appear to already be using https: '$OLD_URL'";
+        return;
+    fi
+    NEW_URL=$(echo $OLD_URL | perl -p -e 's|https://(.*?)/|git@\1:|g')
+    git remote set-url origin $NEW_URL
+}
