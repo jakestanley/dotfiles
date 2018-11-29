@@ -16,6 +16,12 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+if [ -f "$HOME/.proxy_settings" ]; then
+    # include proxy settings
+    echo "Using proxy";
+    . "$HOME/.proxy_settings";
+fi
+
 export PATH=$PATH:/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
