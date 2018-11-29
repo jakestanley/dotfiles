@@ -81,7 +81,7 @@ echo $SPLASH
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-core_plugins="git screen tmux docker pip"
+core_plugins="git screen tmux docker pip gem"
 
 if [ "$OS" = 'Darwin' ]; then
     additional_plugins="osx brew brew-cask"

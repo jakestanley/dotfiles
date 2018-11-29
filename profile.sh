@@ -34,6 +34,7 @@ export PATH=$PATH:$HOME/opt/jdk/jre/bin
 export PATH=$PATH:$HOME/.local/bin:
 export PATH=$PATH:$HOME/.npm/.bin:
 export PATH=$PATH:$HOME/.pilau/lemonbar:
+export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
 
 export DOTFILES=$HOME/git/github.com/madstanners/dotfiles
 
