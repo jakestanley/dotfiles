@@ -1,7 +1,7 @@
 [core]
     editor = vim
     whitespace = trailing-space,space-before-tab,indent-with-non-tab
-	excludesfile = /Users/jake/.gitignore_global
+    excludesfile = /Users/jake/.gitignore_global
 
 [user]
     name = Jake Stanley
@@ -36,7 +36,8 @@
 
 lp = "!x() { git log --pretty=tformat:\"%Cred%d %Cgreen%s %Cblue(%cn) %Cred%h\" --graph --branches --decorate -n$1;}; x"
 l = "!x() { git --no-pager log --pretty=tformat:\"%Cred%d %Cgreen%s %Cblue(%cn) %Cred%h\" --graph --branches --decorate -n$1;}; x"
-ll = "!x() { git --no-pager log --pretty=tformat:\"%Cred%h %Cgreen%s %Cblue(%cn)\" --decorate -n$1;}; x"
+ll = "!x() { git --no-pager log --pretty=tformat:\"%Cred%h %Cgreen%s %Cblue(%cn, %cr)\" --decorate -n$1;}; x"
+llb = "!x() { git --no-pager log --branches --pretty=tformat:\"%Cred%h %Cgreen%s %Cblue(%cn, %cr)\" --decorate -n$1;}; x"
 url = remote get-url --push origin
 
 co = checkout
