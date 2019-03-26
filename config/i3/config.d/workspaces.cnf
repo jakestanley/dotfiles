@@ -17,7 +17,7 @@ assign [class="jetbrains-idea"] $ws2
 assign [class="Eclipse$"] $ws2
 assign [class="EclipseTrader"] $ws10
 assign [class="eclipsetrader"] $ws10
-assign [class="sublime_text"] $ws3
+assign [class="^[Ss]ublime_text$"] $ws3
 assign [class="meld"] $ws4
 assign [class="Meld"] $ws4
 assign [class="chromium$"] $ws6
@@ -29,8 +29,13 @@ assign [class="Spotify"] $ws8
 assign [class="Slack"] $ws9
 assign [class="Mail"] $ws9
 
+# postman
+assign [title="^[Pp]ostman$"] $ws6
+
 # databases
 assign [title="^Oracle SQL Developer .*"] $ws7
+assign [title="^Dbeaver$"] $ws7
+assign [class="^DBeaver$"] $ws7
 assign [class="mysql-workbench-bin"] $ws7
 assign [class="sun-awt-X11-XFramePeer"] $ws7
 
