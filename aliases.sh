@@ -5,6 +5,7 @@ alias got='git'
 alias gitc='git-cola'
 alias maven='mvn'
 alias mcv='mvn clean verify'
+alias cbcp='xclip -selection clip-board -rmlastnl'
 
 ## Miscellaneous
 alias nginxerrors='\less +F /var/log/nginx/error.log'
