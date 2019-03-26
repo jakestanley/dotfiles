@@ -9,6 +9,7 @@
 		"*.iml",
 		"*.iws",
 		"*.ipr",
+		"*.html",
 		".springBeans",
 		"ext-*.js",
 		".DS_Store",
@@ -49,6 +50,7 @@
 		"no_antialias"
 	],
 	"font_size": 10,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Vintage"
