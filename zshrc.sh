@@ -80,39 +80,18 @@ echo $SPLASH
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+plugins=(\
+    git screen tmux docker pip gem rsync mvn aws nvm npm docker-compose \
+    archlinux systemd \
+    osx brew brew-cask)
 
-core_plugins="git screen tmux docker pip gem"
-
-if [ "$OS" = 'Darwin' ]; then
-    additional_plugins="osx brew brew-cask"
-elif [ "$OS" = 'FreeBSD' ]; then
-    # currently FreeBSD doesn't have any specific plugins
-    additional_plugins=""
-else
-    # assume arch linux. what's the worst that could happen?
-    additional_plugins="archlinux systemd"
-fi
-
+# assuming that if we're on ARM, then we're on the raspberry pi or some other 
+# embedded platform, so only use a subset
 if [[ "$ARCHITECTURE" = "arm"* ]]; then
-    plugins=($core_plugins)
-else
-    plugins=(\
-        $core_plugins \
-        sublime \
-        rsync \
-        mvn \
-        ng \
-        aws \
-        fly \
-        nvm \
-        npm \
-        docker-compose \
-        $additional_plugins \
-    )
+    plugins=(git tmux)
 fi
 
-echo "Activating plugins: $plugins"
-echo ""
+echo -e "Activating plugins: $plugins\n"
 
 # User configuration
 export CM_LAUNCHER=rofi
