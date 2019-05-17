@@ -83,7 +83,7 @@ echo $SPLASH
 plugins=(\
     git screen tmux docker pip gem rsync mvn aws nvm npm docker-compose \
     archlinux systemd \
-    osx brew brew-cask)
+    osx brew)
 
 # assuming that if we're on ARM, then we're on the raspberry pi or some other 
 # embedded platform, so only use a subset
