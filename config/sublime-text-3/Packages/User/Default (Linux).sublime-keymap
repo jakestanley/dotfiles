@@ -43,4 +43,12 @@
     "args": {
         "setting": "word_wrap"
     }
+}, {
+    "keys": ["alt+s"],
+    "command": "toggle_in_selection",
+    "context": {
+        "key": "setting.is_widget",
+        "operator": "equal",
+        "operand": true
+    }
 }]
