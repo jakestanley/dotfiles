@@ -96,10 +96,6 @@ echo -e "Activating plugins: $plugins\n"
 # User configuration
 export CM_LAUNCHER=rofi
 
-if [ "$OS" = 'Darwin' ]; then
-    export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
-    export PATH="$HOME/Library/Python/3.6/bin:$PATH"
-fi
 export MANPATH="/usr/local/man:$MANPATH"
 
 # run the oh-my-zsh shell startup script
