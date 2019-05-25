@@ -1,6 +1,4 @@
 {
-	"caret_extra_width": 8,
-	"caret_style": "phase",
 	"color_scheme": "Packages/User/SublimeLinter/base16-solarized-dark (SL).tmTheme",
 	"draw_white_space": "selection",
 	"enable_tab_scrolling": false,
@@ -53,7 +51,6 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"rulers":
 	[
