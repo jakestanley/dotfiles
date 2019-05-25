@@ -29,10 +29,20 @@ export PATH=$PATH:$HOME/.local/bin:
 export PATH=$PATH:$HOME/.npm/.bin:
 export PATH=$PATH:$HOME/.pilau/lemonbar:
 export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
+export MANPATH="/usr/local/man:$MANPATH"
 
-export DOTFILES=$HOME/git/github.com/madstanners/dotfiles
+export DOTFILES=$HOME/git/github.com/jakestanley/dotfiles
 
 export VISUAL="vim"
 export SVN_EDITOR="vim"
 export GOPATH="${HOME}/go"
 export NVM_DIR="$HOME/.nvm"
+
+export XKB_KEYS=gb
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+export SHELLCHECK_OPTS="-e SC2086"
+export SDKMAN_DIR="$HOME/.sdkman"
+
+export THEME=base16-3024
+export CM_LAUNCHER=rofi
+
