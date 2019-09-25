@@ -30,7 +30,7 @@ bindsym $mod+Shift+z exec amixer -D pulse set Master 5%- unmute
 bindsym $mod+Shift+x exec amixer -D pulse set Master 1+ toggle
 
 # take a selection screenshot
-bindsym $mod+Shift+s exec shutter --s
+# bindsym $mod+Shift+s exec shutter --s
 
 # open calculator
 bindsym $mod+Shift+d exec gnome-calculator
