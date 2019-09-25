@@ -54,6 +54,7 @@ alias cf='aws cloudformation --region eu-west-1'
 alias dicker='docker'
 alias dc='docker-compose'
 alias sf='screenfetch'
+alias rfcdate='date --rfc-3339=date'
 
 # permissions, etc
 alias ugx='chmod ug+x'
