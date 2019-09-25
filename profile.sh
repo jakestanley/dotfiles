@@ -28,13 +28,15 @@ export PATH=$PATH:$HOME/opt/jdk/jre/bin
 export PATH=$PATH:$HOME/.local/bin:
 export PATH=$PATH:$HOME/.npm/.bin:
 export PATH=$PATH:$HOME/.pilau/lemonbar:
-export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
+export PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
+
 export MANPATH="/usr/local/man:$MANPATH"
 
 export DOTFILES=$HOME/git/github.com/jakestanley/dotfiles
 
 export VISUAL="vim"
 export SVN_EDITOR="vim"
+export EDITOR="vim"
 export GOPATH="${HOME}/go"
 export NVM_DIR="$HOME/.nvm"
 
