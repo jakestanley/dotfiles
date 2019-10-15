@@ -4,3 +4,4 @@
 *.conf
 *.sublime-workspace
 *.log
+*.attach_pid*

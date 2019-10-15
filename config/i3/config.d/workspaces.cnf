@@ -39,6 +39,9 @@ assign [class="^DBeaver$"] $ws7
 assign [class="mysql-workbench-bin"] $ws7
 assign [class="sun-awt-X11-XFramePeer"] $ws7
 
+# sticky/floating window modifiers
+for_window [title="nvPY"] floating enable sticky enable resize set 640 480
+
 # # i3-gaps
 
 # # set global gaps

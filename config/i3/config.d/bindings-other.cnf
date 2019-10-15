@@ -12,6 +12,9 @@ bindsym $mod+Return exec terminator --profile=$theme
 # start a browser window
 bindsym $mod+b exec chromium-browser
 
+# start nvpy
+bindsym $mod+Shift+v exec nvpy
+
 # start a file manager window
 bindsym $mod+n exec pcmanfm
 
