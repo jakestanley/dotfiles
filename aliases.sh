@@ -63,4 +63,5 @@ alias gr='git_root'
 alias fetch='git fetch --all'
 
 # youtube-dl
-alias youtube-dla='youtube-dl --extract-audio --audio-format mp3'
+alias ytdl-mp3='youtube-dl --extract-audio --audio-format mp3'
+alias ytdl-anon='youtube-dl -o "$(date +%F_%H-%M-%S).%(ext)s"'
