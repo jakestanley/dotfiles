@@ -8,7 +8,7 @@ set $ws5 "5: aws"
 set $ws6 "6: web"
 set $ws7 "7: databases"
 set $ws8 "8: music"
-set $ws9 "9: slack"
+set $ws9 "9: teams"
 set $ws10 "10: misc"
 set $ws11 "####"
 
