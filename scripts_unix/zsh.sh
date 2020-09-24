@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 if [[ "${DOTFILES}" == "" ]]; then
     echo "DOTFILES is not set. Exiting to stay safe"
@@ -9,16 +9,16 @@ DATE=$(date '+%Y-%m-%dT%H%M%S')
 mkdir -p ~/backups
 
 test -f ~/.aliases && \
-rm ~/.aliases
+mv ~/.aliases ~/backups/.aliases_$DATE
 
 test -f ~/.profile && \
 mv ~/.profile ~/backups/.profile_$DATE
 
 test -f ~/.zprofile && \
-rm ~/.zprofile
+mv ~/.zprofile ~/backups/.zprofile_$DATE
 
 test -f ~/.zshrc && \
-rm ~/.zshrc
+mv ~/.zshrc ~/backups/.zshrc_$DATE
 
 test -d ~/.zshrc.d && \
 rm -r ~/.zshrc.d
