@@ -42,9 +42,9 @@ if which VBoxClient-all >/dev/null; then
     VBoxClient-all &
 fi
 
-# compton (if it's installed and that's your thing)
-if which compton >/dev/null; then
-    compton -b &
+# picom (if it's installed and that's your thing)
+if which picom >/dev/null; then
+    picom -b &
 fi
 
 # set solarized background color. TODO make this more portable

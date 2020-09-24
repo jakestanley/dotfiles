@@ -5,7 +5,7 @@ if [[ "${DOTFILES}" == "" ]]; then
     exit 1
 fi
 
-test -f ~/.config/compton.conf && \
-rm ~/.config/compton.conf
+test -f ~/.config/picom.conf && \
+rm ~/.config/picom.conf
 
-ln -s $DOTFILES/config/compton.conf ~/.config/compton.conf
+ln -s $DOTFILES/config/picom.conf ~/.config/picom.conf
