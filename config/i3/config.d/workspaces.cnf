@@ -41,6 +41,7 @@ assign [class="sun-awt-X11-XFramePeer"] $ws7
 
 # sticky/floating window modifiers
 for_window [title="nvPY"] floating enable sticky enable resize set 640 480
+for_window [title="Microsoft Teams Notification"] floating enable
 
 # # i3-gaps
 
