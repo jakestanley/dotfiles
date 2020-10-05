@@ -7,7 +7,7 @@ if [[ "${DOTFILES}" == "" ]]; then
     exit 1
 fi
 
-test -d ~/.config/i3 && \
-rm -r ~/.config/i3
+echo -e "Deprecated: Link X stuff and use the $DOTFILES/xinitrc.d/builders/i3.sh script instead"
+exit 0
 
-ln -s $DOTFILES/config/i3 ~/.config/i3
+#rm -rf $HOME/.config/i3
