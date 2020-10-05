@@ -63,5 +63,7 @@ alias gr='git_root'
 alias fetch='git fetch --all'
 
 # youtube-dl
-alias ytdl-mp3='youtube-dl --extract-audio --audio-format mp3'
-alias ytdl-anon='youtube-dl -o "$(date +%F_%H-%M-%S).%(ext)s"'
+alias mp3-ytdl='youtube-dl --extract-audio --audio-format mp3'
+alias wav-ytdl='youtube-dl --extract-audio --audio-format wav'
+## when you want to download a video that has no title
+alias anon-ytdl='youtube-dl -o "$(date +%F_%H-%M-%S).%(ext)s"'
