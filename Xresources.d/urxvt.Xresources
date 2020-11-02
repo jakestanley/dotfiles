@@ -1,0 +1,4 @@
+urxvt.font: xft:Ubuntu Mono:antialias=true:size=11
+urxvt.letterSpace: 0
+urxvt.scrollBar: false
+urxvt.depth: 32

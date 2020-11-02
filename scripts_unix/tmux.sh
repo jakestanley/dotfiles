@@ -5,11 +5,8 @@ if [[ "${DOTFILES}" == "" ]]; then
     exit 1
 fi
 
-test -f $HOME/.tmux.conf && \
-rm -rf $HOME/.tmux.conf
-
+rm -f $HOME/.tmux.conf
 ln -s $DOTFILES/tmux.conf $HOME/.tmux.conf
-
 
 # useful information
 _tmux_site="https://wiki.archlinux.org/index.php/tmux"
