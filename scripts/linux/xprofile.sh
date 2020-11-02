@@ -9,7 +9,7 @@ fi
 rm -f ~/.xprofile
 ln -s $DOTFILES/xprofile.sh $HOME/.xprofile
 
-# link or relink xrdb stuff
+# remove any existing Xresources stuff
 test -f ~/.Xresources && \
 rm -f ~/.Xresources
 
