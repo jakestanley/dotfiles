@@ -15,6 +15,8 @@ fi
 if [[ -z $THEME ]]; then
     export THEME=base16-solarized-dark
     log "THEME not set. Using default theme: '$THEME'"
+else
+    log "Using theme '$THEME'"
 fi
 
 if which VBoxClient-all >/dev/null; then
