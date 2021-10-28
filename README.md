@@ -1,15 +1,43 @@
 # dotfiles
-my configuration files. i've needed to sanitise them and sort them out for a while, so here goes...
+desktop and shell configuration files
 
-# Goals
+# setup
 
-I've been getting better at using Linux over the last two years and with that I want to clean things up. There's some Windows, macOS and FreeBSD (WIP) stuff in here too.
+make sure `DOTFILES` is set. add it somewhere near the top of your `zshrc` or `profile` or whatever
 
-# Configuring environments
+```
+export DOTFILES="$HOME/git/github.com/jakestanley/dotfiles"
+```
 
-Please see [the wiki](https://github.com/madstanners/dotfiles/wiki) for more information on each environment. I used to store the documentation in the repository as markdown files, but it just became a pain so I decided to use a wiki.
+# setup for zsh
 
-# Caveats
+- requires oh-my-zsh to be installed
 
-- [GDM in Arch Linux does not preprocess user Xresources](https://superuser.com/a/1307782)
+```
+ln -s $HOME/git/github.com/jakestanley/dotfiles/aliases.sh $ZSH_CUSTOM/aliases.zsh
+ln -s $HOME/git/github.com/jakestanley/dotfiles/zsh/custom/functions.zsh $ZSH_CUSTOM/functions.zsh
+```
 
+## edit zsh plugins
+
+I usually use
+
+```
+git screen tmux docker pip rsync mvn aws nvm npm docker-compose
+```
+
+and depending on the platform, some of
+
+```
+archlinux systemd osx
+```
+
+# set up other command line tool configs
+
+- git: `./scripts/unix/git.sh`
+- vim: `./scripts/unix/vim.sh`
+etc etc
+
+# set up graphical tool configs
+
+- sublime: `./scripts/unix/sublime.sh`
