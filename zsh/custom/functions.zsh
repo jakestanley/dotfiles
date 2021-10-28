@@ -96,3 +96,8 @@ function git_origin_to_ssh() {
     NEW_URL=$(echo $OLD_URL | perl -p -e 's|https://(.*?)/|git@\1:|g')
     git remote set-url origin $NEW_URL
 }
+
+function dots() {
+    cd $DOTFILES
+}
+
