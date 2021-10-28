@@ -1,4 +1,5 @@
 # My aliases
+alias python='python3'
 alias mysql='mysql --defaults-extra-file=~/.mycredentials.cnf'
 alias mysqldump='mysqldump --defaults-extra-file=~/.mycredentials.cnf'
 alias got='git'
