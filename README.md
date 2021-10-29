@@ -3,10 +3,14 @@ desktop and shell configuration files
 
 # setup
 
-make sure `DOTFILES` is set. add it somewhere near the top of your `zshrc` or `profile` or whatever
+make sure `DOTFILES` and `ZSH_CUSTOM` are set and exported
+add `DOTFILES` somewhere near the top of your `zshrc` or `profile` or whatever
+and `ZSH_CUSTOM` at the bottom
 
 ```
 export DOTFILES="$HOME/git/github.com/jakestanley/dotfiles"
+...
+export ZSH_CUSTOM="$ZSH_CUSTOM"
 ```
 
 # setup for zsh
