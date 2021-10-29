@@ -45,3 +45,10 @@ etc etc
 # set up graphical tool configs
 
 - sublime: `./scripts/unix/sublime.sh`
+
+# PATH
+
+you'll probably need to add the following to your zshrc somewhere
+```
+export PATH="$PATH:$HOME/.local/bin"
+```
