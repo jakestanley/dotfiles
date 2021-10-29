@@ -14,7 +14,7 @@ fi
 
 # linking zsh custom
 echo -e "\nLinking shell functions and aliases..."
-rm -f "$ZSH_CUSTOM/*.zsh"
+rm -f "$ZSH_CUSTOM"/*.zsh
 ln -s "$DOTFILES/zsh/custom/functions.zsh" "$ZSH_CUSTOM/functions.zsh"
 ln -s "$DOTFILES/aliases.sh" "$ZSH_CUSTOM/aliases.zsh"
 
