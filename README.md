@@ -3,6 +3,8 @@ desktop and shell configuration files
 
 # setup
 
+Install oh-my-zsh
+
 make sure `DOTFILES` and `ZSH_CUSTOM` are set and exported
 add `DOTFILES` somewhere near the top of your `zshrc` or `profile` or whatever
 and `ZSH_CUSTOM` at the bottom
@@ -38,13 +40,13 @@ archlinux systemd osx
 
 # set up other command line tool configs
 
-- git: `./scripts/unix/git.sh`
-- vim: `./scripts/unix/vim.sh`
+- git: `./scripts/git.sh`
+- vim: `./scripts/vim.sh`
 etc etc
 
 # set up graphical tool configs
 
-- sublime: `./scripts/unix/sublime.sh`
+- sublime: `./scripts/sublime.sh`
 
 # PATH
 
