@@ -8,19 +8,27 @@ fi
 OS=$(uname -s)
 
 if [ "$OS" == 'Darwin' ]; then
-    SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 3"
+    TEXT_DIR="$HOME/Library/Application Support/Sublime Text 3"
+    MRGE_DIR="$HOME/Library/Application Support/Sublime Merge"
 elif [ "$OS" == 'Linux' ]; then
-    SUBLIME_DIR="$HOME/.config/sublime-text-3"
+    TEXT_DIR="$HOME/.config/sublime-text-3"
+    MRGE_DIR="$HOME/.config/sublime-merge"
 else
     echo "Environment ${OS} is not supported"
     exit 1
 fi
 
 echo "sublime dir..."
-echo $SUBLIME_DIR
-echo $DOTFILES
+echo $TEXT_DIR
+echo "merge dir..."
+echo $MRGE_DIR
 
-mkdir -p "$SUBLIME_DIR/Packages"
-rm -rf   "$SUBLIME_DIR/Packages/User"
+mkdir -p "$TEXT_DIR/Packages"
+rm -rf   "$TEXT_DIR/Packages/User"
 ln -s    "$DOTFILES/config/sublime-text-3/Packages/User" \
-         "$SUBLIME_DIR/Packages/User"
+         "$TEXT_DIR/Packages/User"
+
+mkdir -p "$MRGE_DIR/Packages"
+rm -rf   "$MRGE_DIR/Packages/User"
+ln -s    "$DOTFILES/config/sublime-merge/Packages/User" \
+         "$MRGE_DIR/Packages/User"

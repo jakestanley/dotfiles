@@ -1,0 +1,7 @@
+[{
+    "keys": ["super+shift+h"],
+    "command": "show_command_palette",
+    "args": {
+        "command": "navigate_to_commit"
+    }
+}]

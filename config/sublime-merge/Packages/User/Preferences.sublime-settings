@@ -1,0 +1,6 @@
+{
+	"theme": "auto",
+	"time_format": "24h",
+	"trim_trailing_white_space_on_save": false,
+        "log_commands": true
+}
