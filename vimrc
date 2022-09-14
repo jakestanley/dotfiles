@@ -3,6 +3,7 @@ filetype off                  " required
 
 set number
 set colorcolumn=80
+set ts=4 sw=4
 syntax enable
 " colo elflord
 
