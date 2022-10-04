@@ -13,20 +13,15 @@
 [difftool]
     prompt = false
 [difftool "meld"]
-    cmd = meld "$LOCAL" "$REMOTE"
-[difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
+    cmd = open -W -a Meld --args \"$LOCAL\" \"$REMOTE\"
+    trustExitCode = true
 
+# Symlink for 'smerge' required on Mac: https://www.sublimemerge.com/docs/command_line
 [merge]
-    tool = meld
-    verbosity = 5
-[mergetool]
-    keepBackup = false
-[mergetool "meld"]
-    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
-[mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    tool = smerge
+
+[mergetool "smerge"]
+    cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
     trustExitCode = true
 
 [alias]
