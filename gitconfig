@@ -46,6 +46,7 @@ mt = mergetool
 
 eat = stash --include-untracked
 poop = stash pop
+fetch = fetch -a --tags
 
 pullr = pull --rebase
 diffn = diff --ignore-space-at-eol
