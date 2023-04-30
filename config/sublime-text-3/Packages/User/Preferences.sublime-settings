@@ -7,7 +7,7 @@
 		"*.iml",
 		"*.iws",
 		"*.ipr",
-		"*.html",
+		
 		".springBeans",
 		"ext-*.js",
 		".DS_Store",
@@ -22,7 +22,9 @@
 		"*.exe",
 		".idea",
 		".settings",
-		".project"
+		".project",
+		".ninja_deps",
+		"*.dylib"
 	],
 	"folder_exclude_patterns":
 	[
@@ -40,7 +42,8 @@
 		"ace",
 		".mvn",
 		"target/test-classes",
-		"target/classes"
+		"target/classes",
+		"CMakeFiles"
 	],
 	"font_face": "Ubuntu Mono",
 	"font_options":
