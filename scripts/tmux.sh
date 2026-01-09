@@ -1,4 +1,4 @@
-# link or relink zsh dotfiles
+#!/usr/bin/env bash
 
 if [[ "${DOTFILES}" == "" ]]; then
     echo "DOTFILES is not set. Exiting to stay safe"
