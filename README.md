@@ -44,6 +44,10 @@ archlinux systemd osx
 - vim: `./scripts/vim.sh`
 etc etc
 
+# Git diff tools by platform
+
+`./scripts/git.sh` now detects your OS and sets `git config --global include.path` to one of the files in `gitconfig.d/` (Linux gets `meld`, macOS gets `diffmerge`), so you automatically get the right difftool without editing the tracked `gitconfig`.
+
 # set up graphical tool configs
 
 - sublime: `./scripts/sublime.sh`

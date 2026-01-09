@@ -1,0 +1,7 @@
+[diff]
+    tool = meld
+
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+    trustExitCode = true
+    prompt = false

@@ -9,15 +9,6 @@
 
 [gui]
 
-[diff]
-    tool = meld
-[difftool]
-    prompt = false
-[difftool "meld"]
-    cmd = open -W -a Meld --args \"$LOCAL\" \"$REMOTE\"
-    trustExitCode = true
-
-# Symlink for 'smerge' required on Mac: https://www.sublimemerge.com/docs/command_line
 [merge]
     tool = smerge
 
@@ -26,6 +17,8 @@
     trustExitCode = true
 
 [alias]
+
+# Platform-specific diff/difftool details live under gitconfig.d/ and are enabled by scripts/git.sh.
 
 lp = "!x() { git log --pretty=tformat:\"%Cred%d %Cgreen%s %Cblue(%cn) %Cred%h\" --graph --branches --decorate -n$1;}; x"
 l = "!x() { git --no-pager log --pretty=tformat:\"%Cred%d %Cgreen%s %Cblue(%cn) %Cred%h\" --graph --branches --decorate -n$1;}; x"

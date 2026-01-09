@@ -1,0 +1,9 @@
+[diff]
+    tool = diffmerge
+
+[difftool]
+    prompt = false
+
+[difftool "diffmerge"]
+    cmd = diffmerge "$LOCAL" "$REMOTE"
+    trustExitCode = true
