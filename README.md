@@ -20,9 +20,15 @@ export ZSH_CUSTOM="$ZSH_CUSTOM"
 - requires oh-my-zsh to be installed
 
 ```
-ln -s $HOME/git/github.com/jakestanley/dotfiles/aliases.sh $ZSH_CUSTOM/aliases.zsh
-ln -s $HOME/git/github.com/jakestanley/dotfiles/zsh/custom/functions.zsh $ZSH_CUSTOM/functions.zsh
+./scripts/zsh.sh
 ```
+This script replaces `$ZSH/custom` with a symlink to the tracked `oh-my-zsh/custom` tree, which already contains `aliases.zsh`, `functions.zsh`, and any other helpers you need.
+
+# Dotfiles-controlled zsh entry points
+
+`./scripts/zsh.sh` now creates the `$ZSH/custom` symlink, links `zprofile`/`zshrc` from this repo into `~/.zprofile`/`~/.zshrc`, seeds `~/.zsh_plugins` and `~/.zsh_aliases`, and even creates a stub `~/.zshrc.local` so local hooks are ready to edit (these locals stay outside the repo).  Keep secrets and automation outside version control in those `.local` files.
+
+Define `~/.zsh_plugins` (or `$DOTFILES/zsh_plugins`) when you need machine-specific plugins.  Those files can export `ZSH_PLUGIN_OVERRIDE="git docker"` to replace the default list or `ZSH_PLUGIN_EXTRA="aws sublime"` to append to it, so the repo doesn’t assume the same plugins everywhere.
 
 ## edit zsh plugins
 
@@ -43,6 +49,10 @@ archlinux systemd osx
 - git: `./scripts/git.sh`
 - vim: `./scripts/vim.sh`
 etc etc
+
+# tmux convenience
+
+Add `alias tmux="$DOTFILES/scripts/tmux-auto.sh"` to your shell so a bare `tmux` command reattaches to an existing `anonymous` session (or creates it when needed) while still letting you pass arguments manually when you want them.
 
 # Git diff tools by platform
 

@@ -1,0 +1,71 @@
+#!/usr/bin/env zsh
+#
+# Interactive shell setup.  `~/.zshrc` should source this file once the dotfiles
+# repository is linked into place; keep per-machine overrides under
+# `~/.zshrc.local`.
+
+# Powerlevel10k instant prompt needs to load before most other logic.
+instant_prompt="${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+[[ -r "$instant_prompt" ]] && source "$instant_prompt"
+
+# History tweaks (keeping the defaults lean but informative).
+setopt append_history
+setopt hist_ignorealldups
+setopt hist_reduce_blanks
+
+# oh-my-zsh settings
+ZSH_THEME="${ZSH_THEME:-robbyrussell}"
+default_plugins=(
+  git \
+  docker
+)
+plugins=("${default_plugins[@]}")
+
+# Allow hosts to customize or extend the plugin list without editing the
+# shared `zshrc`.  `~/.zsh_plugins` or `$DOTFILES/zsh_plugins` can set
+# `ZSH_PLUGIN_OVERRIDE` (replace the list) or `ZSH_PLUGIN_EXTRA` (append
+# additional entries).
+for plugin_source in \
+  "${ZDOTDIR:-$HOME}/.zsh_plugins" \
+  "$DOTFILES/zsh_plugins"; do
+  [[ -f "$plugin_source" ]] && source "$plugin_source"
+done
+
+if [[ -n "$ZSH_PLUGIN_OVERRIDE" ]]; then
+  plugins=("${(@s: :)ZSH_PLUGIN_OVERRIDE}")
+elif [[ -n "$ZSH_PLUGIN_EXTRA" ]]; then
+  plugins+=("${(@s: :)ZSH_PLUGIN_EXTRA}")
+fi
+
+if [[ -f "$ZSH/oh-my-zsh.sh" ]]; then
+  source "$ZSH/oh-my-zsh.sh"
+fi
+
+# Load the repository's custom aliases.
+custom_aliases="${ZSH_CUSTOM:-$ZSH/custom}/aliases.zsh"
+[[ -r "$custom_aliases" ]] && source "$custom_aliases"
+
+# Preserve any local alias file too.
+local_aliases="${ZDOTDIR:-$HOME}/.zsh_aliases"
+[[ -r "$local_aliases" ]] && source "$local_aliases"
+
+# SDKMAN and Node version manager helpers.
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
+[[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"
+
+# fzf defaults
+export FZF_DEFAULT_COMMAND='find . -type d \( -name node_modules -o -name .git \) -prune -o -type f -print'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+[[ -f "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
+
+# Powerlevel10k prompt file, if it exists.
+[[ -f "$HOME/.p10k.zsh" ]] && source "$HOME/.p10k.zsh"
+
+# Machine-specific hooks.  Keep these outside the repo so each host can
+# customize without touching the shared files.
+local_rc="${ZDOTDIR:-$HOME}/.zshrc.local"
+dotfiles_rc="$DOTFILES/zshrc.local"
+[[ -f "$local_rc" ]] && source "$local_rc"
+[[ -f "$dotfiles_rc" ]] && source "$dotfiles_rc"

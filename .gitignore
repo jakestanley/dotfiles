@@ -22,3 +22,6 @@ zshrc.d/work.zsh
 # zsh plugins
 oh-my-zsh/custom/plugins
 
+# tmp
+tmp
+
