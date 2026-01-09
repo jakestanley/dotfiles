@@ -52,7 +52,7 @@ etc etc
 
 # tmux convenience
 
-Add `alias tmux="$DOTFILES/scripts/tmux-auto.sh"` to your shell so a bare `tmux` command reattaches to an existing `anonymous` session (or creates it when needed) while still letting you pass arguments manually when you want them.
+The wrapper stored at `scripts/tmux-auto.sh` is already aliased in `oh-my-zsh/custom/aliases.zsh`, so running `tmux` without arguments reattaches the shared `anonymous` session (and still accepts explicit arguments when you need them).
 
 # Git diff tools by platform
 
