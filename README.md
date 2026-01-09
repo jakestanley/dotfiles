@@ -5,6 +5,8 @@ desktop and shell configuration files
 
 Install oh-my-zsh
 
+Run `./scripts/check.sh` first to see which files in your home directory already point into this repo, whether the local stubs (`.zsh_plugins`, `.zsh_aliases`, `.zshrc.local`, `.zprofile.local`) are in place, and which installer scripts are still worth running.
+
 make sure `DOTFILES` and `ZSH_CUSTOM` are set and exported
 add `DOTFILES` somewhere near the top of your `zshrc` or `profile` or whatever
 and `ZSH_CUSTOM` at the bottom
