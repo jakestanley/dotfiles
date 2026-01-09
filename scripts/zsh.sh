@@ -99,3 +99,13 @@ else
   echo "# Machine-specific ~/.zshrc hooks" >> "$local_rc"
   log "Created $local_rc"
 fi
+
+# Ensure there is a per-host profile hook too.
+local_profile="${ZDOTDIR:-$HOME}/.zprofile.local"
+if [[ -e "$local_profile" ]]; then
+  log "$local_profile already exists"
+else
+  touch "$local_profile"
+  echo "# Machine-specific ~/.zprofile hooks" >> "$local_profile"
+  log "Created $local_profile"
+fi
