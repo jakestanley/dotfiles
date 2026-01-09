@@ -28,7 +28,7 @@ This script replaces `$ZSH/custom` with a symlink to the tracked `oh-my-zsh/cust
 
 # Dotfiles-controlled zsh entry points
 
-`./scripts/zsh.sh` now creates the `$ZSH/custom` symlink, links `zprofile`/`zshrc` from this repo into `~/.zprofile`/`~/.zshrc`, seeds `~/.zsh_plugins` and `~/.zsh_aliases`, and even creates a stub `~/.zshrc.local` so local hooks are ready to edit (these locals stay outside the repo).  Keep secrets and automation outside version control in those `.local` files.
+`./scripts/zsh.sh` now creates the `$ZSH/custom` symlink, links `zprofile`/`zshrc` from this repo into `~/.zprofile`/`~/.zshrc`, seeds `~/.zsh_plugins`, `~/.zsh_aliases`, and `~/.zsh_functions`, creates a stub `~/.zshrc.local`, and makes sure the shared helpers under `zsh/aliases.zsh` and `zsh/functions.zsh` are part of the bootstrap rather than living under `oh-my-zsh/custom`.  Keep secrets and automation outside version control in the `.local` files.
 
 Define `~/.zsh_plugins` (or `$DOTFILES/zsh_plugins`) when you need machine-specific plugins.  Those files can export `ZSH_PLUGIN_OVERRIDE="git docker"` to replace the default list or `ZSH_PLUGIN_EXTRA="aws sublime"` to append to it, so the repo doesn’t assume the same plugins everywhere.
 

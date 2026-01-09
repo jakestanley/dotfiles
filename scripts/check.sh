@@ -22,7 +22,7 @@ declare -A LINK_SCRIPTS=(
   [".vimrc"]="scripts/vim.sh"
 )
 
-declare -a LOCAL_STUBS=(".zsh_plugins" ".zsh_aliases" ".zshrc.local" ".zprofile.local")
+declare -a LOCAL_STUBS=(".zsh_plugins" ".zsh_aliases" ".zsh_functions" ".zshrc.local" ".zprofile.local")
 
 missing_scripts=()
 
@@ -65,6 +65,16 @@ for stub in "${LOCAL_STUBS[@]}"; do
     echo " - $HOME/$stub exists"
   else
     echo " - $HOME/$stub missing (script will create on install)"
+  fi
+done
+
+declare -a HELPER_FILES=("zsh/aliases.zsh" "zsh/functions.zsh")
+printf '\nShared helper files:\n'
+for helper in "${HELPER_FILES[@]}"; do
+  if [[ -f "$DOTFILES/$helper" ]]; then
+    printf " - %s exists\n" "$helper"
+  else
+    printf " - %s missing (add it to your repo)\n" "$helper"
   fi
 done
 

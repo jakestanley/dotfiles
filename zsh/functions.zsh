@@ -100,4 +100,3 @@ function git_origin_to_ssh() {
 function dots() {
     cd $DOTFILES
 }
-

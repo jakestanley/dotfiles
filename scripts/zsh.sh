@@ -45,6 +45,16 @@ link_dotfile() {
 link_dotfile "zprofile"
 link_dotfile "zshrc"
 
+# Verify shared helper files exist so `zshrc` can source them.
+for helper in aliases functions; do
+  helper_path="$DOTFILES/zsh/$helper.zsh"
+  if [[ -f "$helper_path" ]]; then
+    log "Helper available: $helper_path"
+  else
+    log "Warning: $helper_path is missing"
+  fi
+done
+
 # Ensure a per-host plugin hook exists so people can opt in without editing repo.
 local_plugins="${ZDOTDIR:-$HOME}/.zsh_plugins"
 
@@ -68,6 +78,16 @@ else
   touch "$local_aliases"
   echo "# Local alias overrides" >> "$local_aliases"
   log "Created $local_aliases"
+fi
+
+# Ensure there is a per-host function file for extra helpers.
+local_functions="${ZDOTDIR:-$HOME}/.zsh_functions"
+if [[ -e "$local_functions" ]]; then
+  log "$local_functions already exists"
+else
+  touch "$local_functions"
+  echo "# Local function overrides" >> "$local_functions"
+  log "Created $local_functions"
 fi
 
 # Ensure local overrides files exist even though they are not tracked.

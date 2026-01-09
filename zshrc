@@ -41,13 +41,19 @@ if [[ -f "$ZSH/oh-my-zsh.sh" ]]; then
   source "$ZSH/oh-my-zsh.sh"
 fi
 
-# Load the repository's custom aliases.
-custom_aliases="${ZSH_CUSTOM:-$ZSH/custom}/aliases.zsh"
-[[ -r "$custom_aliases" ]] && source "$custom_aliases"
+# Load the repository's custom aliases and helpers.
+dotfiles_aliases="$DOTFILES/zsh/aliases.zsh"
+[[ -r "$dotfiles_aliases" ]] && source "$dotfiles_aliases"
+dotfiles_functions="$DOTFILES/zsh/functions.zsh"
+[[ -r "$dotfiles_functions" ]] && source "$dotfiles_functions"
 
 # Preserve any local alias file too.
 local_aliases="${ZDOTDIR:-$HOME}/.zsh_aliases"
 [[ -r "$local_aliases" ]] && source "$local_aliases"
+
+# Allow machine-specific functions.
+local_functions="${ZDOTDIR:-$HOME}/.zsh_functions"
+[[ -r "$local_functions" ]] && source "$local_functions"
 
 # SDKMAN and Node version manager helpers.
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
