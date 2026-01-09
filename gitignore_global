@@ -1,7 +1,21 @@
+#
+# Global ignores to cover common temp files, system cruft, and editor metadata
+
 *~
+*.log
+*.tmp
+*.swp
+*.swo
+
 .DS_Store
 *.DS_Store
-*.conf
-*.sublime-workspace
-*.log
+Thumbs.db
+
+*.pid
+*.pid.lock
 *.attach_pid*
+
+*.sublime-workspace
+*.sublime-project
+*.vscode/
+*.idea/

@@ -1,7 +1,8 @@
 [core]
     editor = vim
     whitespace = trailing-space,space-before-tab,indent-with-non-tab
-    excludesfile = /Users/jake/.gitignore_global
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
 
 [push]
     default = simple
@@ -33,9 +34,6 @@ llb = "!x() { git --no-pager log --branches --pretty=tformat:\"%Cred%h %Cgreen%s
 url = remote get-url --push origin
 
 co = checkout
-empty = checkout -- .
-
-nb = checkout -b
 cb = checkout -b
 db = branch -D
 
