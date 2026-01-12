@@ -43,6 +43,7 @@ pullr = pull --rebase
 diffn = diff --ignore-space-at-eol
 amend = commit --amend
 
-# Local overrides belong in ~/.gitconfig.local (GPG, personal email, etc.).
+# Local overrides live in ~/.gitconfig.local; ./scripts/git.sh makes sure this file exists and keeps the platform include updated.
 [include]
-    path = ~/.gitconfig.local
+	path = /Users/jake/.gitconfig.local
+	path = /Users/jake/git/github.com/dotfiles/gitconfig.d/macos.gitconfig

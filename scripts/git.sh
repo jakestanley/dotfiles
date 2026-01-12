@@ -21,7 +21,7 @@ else
 EOF
     echo "Created $local_git_config"
 fi
-# Configure the OS-specific diff tool include if it exists
+
 platform=""
 case "$(uname -s)" in
     Linux*) platform="linux" ;;
@@ -29,7 +29,10 @@ case "$(uname -s)" in
 esac
 
 include_file="$DOTFILES/gitconfig.d/${platform}.gitconfig"
+
+git config --global --unset-all include.path >/dev/null 2>&1 || true
+git config --global include.path "$local_git_config"
 if [[ -n "$platform" && -f "$include_file" ]]; then
-    git config --global include.path "$include_file"
+    git config --global --add include.path "$include_file"
     echo "Enabled git include from $include_file"
 fi
