@@ -4,8 +4,22 @@
 # `~/.zprofile`; runtime-specific tweaks belong in `~/.zprofile.local` or
 # `~/.zshrc.local`, not under version control.
 
-# Determine the dotfiles root if not exported by the caller.
-DOTFILES="${DOTFILES:-${ZDOTDIR:-$HOME}/git/github.com/dotfiles}"
+# Determine the dotfiles root by checking the common clone locations.
+if [[ -n "${DOTFILES:-}" && -d "$DOTFILES" ]]; then
+  :
+else
+  potential=(
+    "$HOME/git/github.com/jakestanley/dotfiles"
+    "$HOME/git/github.com/dotfiles"
+  )
+  for candidate in "${potential[@]}"; do
+    if [[ -n "$candidate" && -d "$candidate" ]]; then
+      DOTFILES="$candidate"
+      break
+    fi
+  done
+  DOTFILES="${DOTFILES:-${ZDOTDIR:-$HOME}/git/github.com/dotfiles}"
+fi
 export DOTFILES
 
 # Customize oh-my-zsh and SDK managers.

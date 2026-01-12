@@ -7,12 +7,10 @@ Install oh-my-zsh
 
 Run `./scripts/check.sh` first to see which files in your home directory already point into this repo, whether the local stubs (`.zsh_plugins`, `.zsh_aliases`, `.zshrc.local`, `.zprofile.local`) are in place, and which installer scripts are still worth running.
 
-make sure `DOTFILES` and `ZSH_CUSTOM` are set and exported
-add `DOTFILES` somewhere near the top of your `zshrc` or `profile` or whatever
-and `ZSH_CUSTOM` at the bottom
+By default, `zprofile` will autodetect the repository root by checking, in order, any existing `DOTFILES`, `~/git/github.com/jakestanley/dotfiles`, and `~/git/github.com/dotfiles`. If your clone lives elsewhere, export `DOTFILES` before sourcing your shell and export `ZSH_CUSTOM` near the bottom of your profile.
 
 ```
-export DOTFILES="$HOME/git/github.com/jakestanley/dotfiles"
+export DOTFILES="$HOME/git/github.com/dotfiles"
 ...
 export ZSH_CUSTOM="$ZSH_CUSTOM"
 ```
