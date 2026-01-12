@@ -11,6 +11,16 @@ rm -f ~/.gitignore_global
 ln -s $DOTFILES/gitconfig ~/.gitconfig
 ln -s $DOTFILES/gitignore_global ~/.gitignore_global
 
+# Ensure a local git override file exists for per-machine settings.
+local_git_config="$HOME/.gitconfig.local"
+if [[ -e "$local_git_config" ]]; then
+    echo "Git local overrides already exist at $local_git_config"
+else
+    cat <<'EOF' > "$local_git_config"
+# Add per-machine overrides (GPG key, user/email overrides, etc.) below this line.
+EOF
+    echo "Created $local_git_config"
+fi
 # Configure the OS-specific diff tool include if it exists
 platform=""
 case "$(uname -s)" in

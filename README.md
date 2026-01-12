@@ -5,7 +5,7 @@ desktop and shell configuration files
 
 Install oh-my-zsh
 
-Run `./scripts/check.sh` first to see which files in your home directory already point into this repo, whether the local stubs (`.zsh_plugins`, `.zsh_aliases`, `.zshrc.local`, `.zprofile.local`) are in place, and which installer scripts are still worth running.
+Run `./scripts/check.sh` first to see which files in your home directory already point into this repo, whether the local stubs (`.zsh_plugins`, `.zsh_aliases`, `.zsh_functions`, `.zshrc.local`, `.zprofile.local`) are in place, and which installer scripts are still worth running.
 
 By default, `zprofile` will autodetect the repository root by checking, in order, any existing `DOTFILES`, `~/git/github.com/jakestanley/dotfiles`, and `~/git/github.com/dotfiles`. If your clone lives elsewhere, export `DOTFILES` before sourcing your shell and export `ZSH_CUSTOM` near the bottom of your profile.
 
@@ -49,6 +49,8 @@ archlinux systemd osx
 - git: `./scripts/git.sh`
 - vim: `./scripts/vim.sh`
 etc etc
+
+Local git overrides (GPG key, work-specific user/email, etc.) belong in `~/.gitconfig.local`; `./scripts/git.sh` ensures that file exists and the tracked `gitconfig` includes it before linking.
 
 # tmux convenience
 

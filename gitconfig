@@ -41,5 +41,7 @@ fetch = fetch -a --tags
 
 pullr = pull --rebase
 diffn = diff --ignore-space-at-eol
-
 amend = commit --amend
+# Local overrides belong in ~/.gitconfig.local (GPG, personal email, etc.).
+[include]
+    path = ~/.gitconfig.local
