@@ -96,7 +96,12 @@ if [[ -e "$local_rc" ]]; then
   log "$local_rc already exists"
 else
   touch "$local_rc"
-  echo "# Machine-specific ~/.zshrc hooks" >> "$local_rc"
+  {
+    echo "# Machine-specific ~/.zshrc hooks"
+    echo "#"
+    echo "# fzf ignore patterns examples (appended to the repo defaults):"
+    echo "#   FZF_IGNORE_PATTERNS+=( '*.class' )"
+  } >> "$local_rc"
   log "Created $local_rc"
 fi
 

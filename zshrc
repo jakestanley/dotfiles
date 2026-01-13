@@ -62,9 +62,42 @@ local_functions="${ZDOTDIR:-$HOME}/.zsh_functions"
 [[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"
 
 # fzf defaults
-export FZF_DEFAULT_COMMAND='find . -type d \( -name node_modules -o -name .git \) -prune -o -type f -print'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-[[ -f "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
+# - `FZF_IGNORE_PATTERNS` is an appendable list of glob patterns used to prune
+#   directories and exclude matching files (e.g. add `dist` or `*.log`).
+# - Append in `~/.zshrc.local`, eg: `FZF_IGNORE_PATTERNS+=(dist target)`.
+typeset -ga FZF_IGNORE_PATTERNS
+if (( ${#FZF_IGNORE_PATTERNS[@]} == 0 )); then
+  FZF_IGNORE_PATTERNS=(node_modules .git)
+fi
+
+fzf_refresh_default_command() {
+  local prune_expr=""
+  local file_expr=""
+  local pattern=""
+  local qpattern=""
+
+  for pattern in "${FZF_IGNORE_PATTERNS[@]}"; do
+    qpattern=${(q)pattern}
+    prune_expr+="-name ${qpattern} -o "
+    file_expr+="-name ${qpattern} -o "
+  done
+
+  prune_expr=${prune_expr% -o }
+  file_expr=${file_expr% -o }
+
+  local cmd="find ."
+  if [[ -n "$prune_expr" ]]; then
+    cmd+=" -type d \\( ${prune_expr} \\) -prune -o"
+  fi
+  cmd+=" -type f"
+  if [[ -n "$file_expr" ]]; then
+    cmd+=" -not \\( ${file_expr} \\)"
+  fi
+  cmd+=" -print 2>/dev/null"
+
+  export FZF_DEFAULT_COMMAND="$cmd"
+  export FZF_CTRL_T_COMMAND="$cmd"
+}
 
 # Powerlevel10k prompt file, if it exists.
 [[ -f "$HOME/.p10k.zsh" ]] && source "$HOME/.p10k.zsh"
@@ -75,3 +108,6 @@ local_rc="${ZDOTDIR:-$HOME}/.zshrc.local"
 dotfiles_rc="$DOTFILES/zshrc.local"
 [[ -f "$local_rc" ]] && source "$local_rc"
 [[ -f "$dotfiles_rc" ]] && source "$dotfiles_rc"
+
+fzf_refresh_default_command
+[[ -f "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
