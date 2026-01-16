@@ -111,3 +111,10 @@ dotfiles_rc="$DOTFILES/zshrc.local"
 
 fzf_refresh_default_command
 [[ -f "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
+
+# If we're inside GNU screen, annotate the prompt.
+if (( ${+functions[_dotfiles_prompt_apply_screen_prefix]} )); then
+  if ! (( ${precmd_functions[(Ie)_dotfiles_prompt_apply_screen_prefix]} )); then
+    precmd_functions+=(_dotfiles_prompt_apply_screen_prefix)
+  fi
+fi

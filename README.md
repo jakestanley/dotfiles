@@ -47,6 +47,7 @@ archlinux systemd osx
 # set up other command line tool configs
 
 - git: `./scripts/git.sh`
+- screen: `./scripts/screen.sh`
 - vim: `./scripts/vim.sh`
 etc etc
 

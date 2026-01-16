@@ -100,3 +100,31 @@ function git_origin_to_ssh() {
 function dots() {
     cd $DOTFILES
 }
+
+# Prompt helpers
+function _dotfiles_prompt_screen_prefix() {
+    if [[ -n "${STY:-}" ]]; then
+        echo "%F{magenta}[screen]%f "
+    fi
+}
+
+function _dotfiles_prompt_apply_screen_prefix() {
+    local prefix="$(_dotfiles_prompt_screen_prefix)"
+
+    if [[ -z "$prefix" ]]; then
+        if [[ -n "${DOTFILES_PROMPT_BASE:-}" ]] && ! (( ${+functions[p10k]} )); then
+            PROMPT="$DOTFILES_PROMPT_BASE"
+        fi
+        return 0
+    fi
+
+    if (( ${+functions[p10k]} )); then
+        PROMPT="${prefix}${PROMPT}"
+        return 0
+    fi
+
+    if [[ -z "${DOTFILES_PROMPT_BASE:-}" ]]; then
+        DOTFILES_PROMPT_BASE="$PROMPT"
+    fi
+    PROMPT="${prefix}${DOTFILES_PROMPT_BASE}"
+}
