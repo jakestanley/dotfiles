@@ -22,6 +22,9 @@ EOF
     echo "Created $local_git_config"
 fi
 
+# Use the repo-managed hook set (includes a pre-push guard against future-dated commits).
+git config --global core.hooksPath "$DOTFILES/git-hooks"
+
 platform=""
 case "$(uname -s)" in
     Linux*) platform="linux" ;;

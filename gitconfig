@@ -3,6 +3,7 @@
     whitespace = trailing-space,space-before-tab,indent-with-non-tab
     excludesfile = ~/.gitignore_global
     autocrlf = input
+hooksPath = /Users/jake/git/github.com/dotfiles/git-hooks
 
 [push]
     default = simple
