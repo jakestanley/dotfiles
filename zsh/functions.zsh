@@ -128,3 +128,66 @@ function _dotfiles_prompt_apply_screen_prefix() {
     fi
     PROMPT="${prefix}${DOTFILES_PROMPT_BASE}"
 }
+
+function git_amend_add_8h() {
+    local hours="${1:-8}"
+
+    if ! [[ "$hours" =~ '^-?[0-9]+$' ]]; then
+        echo "usage: git_amend_add_8h [hours]  (default: 8)" >&2
+        return 2
+    fi
+
+    if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        echo "not inside a git repository" >&2
+        return 1
+    fi
+
+    if ! git rev-parse --verify HEAD >/dev/null 2>&1; then
+        echo "no commits found (HEAD does not exist)" >&2
+        return 1
+    fi
+
+    if ! command -v python3 >/dev/null 2>&1; then
+        echo "python3 is required to adjust timestamps" >&2
+        return 1
+    fi
+
+    local author_date
+    local committer_date
+    local new_author_date
+    local new_committer_date
+
+    author_date=$(git show -s --format=%aI HEAD) || return 1
+    committer_date=$(git show -s --format=%cI HEAD) || return 1
+
+    new_author_date=$(
+        python3 - "$author_date" "$hours" <<'PY'
+import sys
+from datetime import datetime, timedelta
+
+value = sys.argv[1].replace("Z", "+00:00")
+hours = int(sys.argv[2])
+dt = datetime.fromisoformat(value)
+print((dt + timedelta(hours=hours)).isoformat())
+PY
+    ) || return 1
+
+    new_committer_date=$(
+        python3 - "$committer_date" "$hours" <<'PY'
+import sys
+from datetime import datetime, timedelta
+
+value = sys.argv[1].replace("Z", "+00:00")
+hours = int(sys.argv[2])
+dt = datetime.fromisoformat(value)
+print((dt + timedelta(hours=hours)).isoformat())
+PY
+    ) || return 1
+
+    echo "Amending HEAD: shift timestamps by ${hours}h"
+    echo "Author:    ${author_date} -> ${new_author_date}"
+    echo "Committer: ${committer_date} -> ${new_committer_date}"
+
+    GIT_COMMITTER_DATE="$new_committer_date" \
+        git commit --amend --no-edit --date "$new_author_date"
+}
