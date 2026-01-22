@@ -44,4 +44,7 @@ pullr = pull --rebase
 diffn = diff --ignore-space-at-eol
 amend = commit --amend
 
+[init]
+	defaultBranch = main
+
 # Local overrides live in ~/.gitconfig.local; ./scripts/git.sh makes sure this file exists and keeps the platform include updated.
