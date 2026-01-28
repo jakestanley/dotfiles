@@ -30,6 +30,23 @@ This script replaces `$ZSH/custom` with a symlink to the tracked `oh-my-zsh/cust
 
 Define `~/.zsh_plugins` (or `$DOTFILES/zsh_plugins`) when you need machine-specific plugins.  Those files can export `ZSH_PLUGIN_OVERRIDE="git docker"` to replace the default list or `ZSH_PLUGIN_EXTRA="aws sublime"` to append to it, so the repo doesn’t assume the same plugins everywhere.
 
+## zsh functions
+
+Shared helpers live in `zsh/functions.zsh`:
+
+- `buildkit-clean`: clear the `maven` buildx builder + container/image and force BuildKit
+- `derps`: watch running Docker containers (name + image)
+- `docker_bash`: run a bash shell inside a Docker image
+- `docker_ssh`: SSH into a Docker container by name (optionally pass a port)
+- `dots`: jump to the dotfiles repo root
+- `git_amend_add_8h`: shift the latest commit timestamps by a number of hours
+- `git_origin_to_https`: switch `origin` from SSH to HTTPS
+- `git_origin_to_ssh`: switch `origin` from HTTPS to SSH
+- `git_root`: `cd` to the current repo root
+- `gitignore`: generate a Java + JetBrains + editor `.gitignore` in the CWD
+- `pip_install`: `python -m pip install -U <pkg> --user`
+- `stn`: create/open a Sublime Text project for a directory
+
 ## edit zsh plugins
 
 I usually use
