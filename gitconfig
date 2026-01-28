@@ -3,7 +3,6 @@
     whitespace = trailing-space,space-before-tab,indent-with-non-tab
     excludesfile = ~/.gitignore_global
     autocrlf = input
-hooksPath = /Users/jake/git/github.com/dotfiles/git-hooks
 
 [push]
     default = simple
@@ -19,7 +18,7 @@ hooksPath = /Users/jake/git/github.com/dotfiles/git-hooks
 
 [alias]
 
-# Platform-specific diff/difftool details live under gitconfig.d/ and are enabled by scripts/git.sh.
+# Platform-specific diff/difftool details are kept in ~/.gitconfig.local by scripts/git.sh.
 
 lp = "!x() { git log --pretty=tformat:\"%Cred%d %Cgreen%s %Cblue(%cn) %Cred%h\" --graph --branches --decorate -n$1;}; x"
 l = "!x() { git --no-pager log --pretty=tformat:\"%Cred%d %Cgreen%s %Cblue(%cn) %Cred%h\" --graph --branches --decorate -n$1;}; x"
@@ -47,4 +46,9 @@ amend = commit --amend
 [init]
 	defaultBranch = main
 
-# Local overrides live in ~/.gitconfig.local; ./scripts/git.sh makes sure this file exists and keeps the platform include updated.
+# Local overrides live in ~/.gitconfig.local; ./scripts/git.sh makes sure this file exists.
+[include]
+	path = ~/.gitconfig.local
+[user]
+	name = Jake Stanley
+	email = mail@jakestanley.co.uk

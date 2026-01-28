@@ -22,20 +22,35 @@ EOF
     echo "Created $local_git_config"
 fi
 
-# Use the repo-managed hook set (includes a pre-push guard against future-dated commits).
-git config --global core.hooksPath "$DOTFILES/git-hooks"
+# Install dotfiles-managed hooks to a stable per-user location (so no absolute
+# DOTFILES path is required in git config).
+hooks_dir="${XDG_CONFIG_HOME:-$HOME/.config}/git/hooks"
+mkdir -p "$hooks_dir"
 
-platform=""
-case "$(uname -s)" in
-    Linux*) platform="linux" ;;
-    Darwin*) platform="macos" ;;
-esac
-
-include_file="$DOTFILES/gitconfig.d/${platform}.gitconfig"
-
-git config --global --unset-all include.path >/dev/null 2>&1 || true
-git config --global include.path "$local_git_config"
-if [[ -n "$platform" && -f "$include_file" ]]; then
-    git config --global --add include.path "$include_file"
-    echo "Enabled git include from $include_file"
+if [[ -d "$DOTFILES/git-hooks" ]]; then
+    for hook in "$DOTFILES"/git-hooks/*; do
+        [[ -f "$hook" ]] || continue
+        dest="$hooks_dir/$(basename "$hook")"
+        cp -f "$hook" "$dest"
+        chmod +x "$dest" >/dev/null 2>&1 || true
+    done
 fi
+
+git config --file "$local_git_config" core.hooksPath "$hooks_dir"
+
+# Keep difftool config machine-local as well (avoid writing platform-specific
+# absolute paths into the tracked gitconfig).
+case "$(uname -s)" in
+    Linux*)
+        git config --file "$local_git_config" diff.tool meld
+        git config --file "$local_git_config" difftool.prompt false
+        git config --file "$local_git_config" difftool.meld.cmd 'meld "$LOCAL" "$REMOTE"'
+        git config --file "$local_git_config" difftool.meld.trustExitCode true
+        ;;
+    Darwin*)
+        git config --file "$local_git_config" diff.tool diffmerge
+        git config --file "$local_git_config" difftool.prompt false
+        git config --file "$local_git_config" difftool.diffmerge.cmd 'diffmerge "$LOCAL" "$REMOTE"'
+        git config --file "$local_git_config" difftool.diffmerge.trustExitCode true
+        ;;
+esac
