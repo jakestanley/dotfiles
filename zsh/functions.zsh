@@ -191,3 +191,12 @@ PY
     GIT_COMMITTER_DATE="$new_committer_date" \
         git commit --amend --no-edit --date "$new_author_date"
 }
+
+function buildkit-clean() {
+    export DOCKER_BUILDKIT=1
+    docker stop buildx_buildkit_maven0 \
+        && docker rm buildx_buildkit_maven0 \
+        && docker rmi moby/buildkit:buildx-stable-1
+    docker buildx rm maven
+    docker builder rm maven
+}
