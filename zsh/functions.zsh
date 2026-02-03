@@ -200,3 +200,15 @@ function buildkit-clean() {
     docker buildx rm maven
     docker builder rm maven
 }
+
+function demucs-sync() {
+    rsync -av --delete --prune-empty-dirs \
+        --exclude='._*' \
+        --include='/reports/***' \
+        --include='/Playlists/' \
+        --include='/Playlists/**/' \
+        --include='/Playlists/**/unprocessed/***' \
+        --exclude='*' \
+        jake@adler:~/Music/ \
+        ~/Music/
+}
