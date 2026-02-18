@@ -41,6 +41,9 @@ if [[ -f "$ZSH/oh-my-zsh.sh" ]]; then
   source "$ZSH/oh-my-zsh.sh"
 fi
 
+# Require explicit `cd <dir>` instead of auto-changing on bare directory names.
+unsetopt auto_cd
+
 # Load the repository's custom aliases and helpers.
 dotfiles_aliases="$DOTFILES/zsh/aliases.zsh"
 [[ -r "$dotfiles_aliases" ]] && source "$dotfiles_aliases"
